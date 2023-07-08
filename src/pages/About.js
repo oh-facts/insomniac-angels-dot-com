@@ -1,5 +1,4 @@
 import earth1 from '../assets/earth1.jpg'
-import earth2 from '../assets/earth2.jpg'
 
 
 const About = () => {
