@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+body{
+  background-color: #a4005b;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.Background{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Background img{
+  width: 90%;
+  height: auto;
+  pointer-events: none; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Menubar{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.Menubar button{
+  color: #ff9324;
+  border: none;
+  background-color: transparent;
+  transition-duration: 0.2s;
+  font-size: 1.5vw;
+  padding: 2%;
+}
+
+.Menubar button:hover {
+  box-shadow: inset 0 -2px 0 0 #ff9324;
+  cursor: pointer;
+}
+.textbox {
+  color: #ff9324;
+  padding-right: 10%;
+}
+
+.about{
+  display: flex;
+  padding-top: 10%;
+}
+
+.about img{
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.top-line,
+.bottom-line {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff9324;
+}
+
+.left-line,
+.right-line {
+  position: fixed;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #ff9324;
+}
+
+.top-line {
+  top: 1vw;
+}
+
+.bottom-line {
+  bottom: 1vw;
+}
+
+.left-line {
+  left: 1vw;
+}
+
+.right-line {
+  right: 1vw;
 }
