@@ -1,5 +1,13 @@
+
+@font-face {
+  font-family: 'Delius';
+  src: url('assets/Delius-Regular.ttf') format('truetype');
+}
+
+
 body{
   background-color: #a4005b;
+  font-family: 'Delius';
 }
 
 .App{
@@ -56,6 +64,7 @@ body{
   flex-direction: column;
   font-size: 1vw;
   align-items: center;
+  
 }
 
 .card img{
@@ -70,7 +79,8 @@ body{
   flex-direction: column;
   overflow-y: scroll;
   height: 45vw;
-  
+  padding-left: 15vw;
+  padding-right: 15vw;
 }
 
 
@@ -89,7 +99,9 @@ body{
 
 .textbox {
   color: #ff9324;
-  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  line-height: 2;
 }
 
 .top-line,
