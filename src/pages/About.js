@@ -4,27 +4,32 @@ import earth1 from '../assets/earth1.jpg'
 const About = () => {
   return (
     <div className='about'>
-      <img src={earth1} alt='banner' />
+      
+      <div className='card-container'>
 
-      <div className="textbox">
-        <h1>Lorem Ipsum</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies sapien non turpis
-          suscipit, eu cursus enim laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et
-          ultrices posuere cubilia Curae; Cras vel tortor a felis interdum eleifend. Donec consectetur
-          placerat nisi auctor aliquet. Fusce lobortis, nisi ac suscipit consequat, nisl elit molestie
-          turpis, vitae luctus felis ex a ligula. Curabitur eu enim dui. Nunc lacinia diam a lacus
-          posuere, nec blandit elit vestibulum. Proin tincidunt, lorem eu convallis semper, purus felis
-          porta ligula, ac bibendum turpis urna id ipsum.
-        </p>
-        <p>
-          Duis fringilla, mauris eget vestibulum sollicitudin, dui dolor pretium nisi, vitae lacinia
-          lectus ipsum at ante. Vestibulum eu gravida mauris. Maecenas vitae massa felis. Nam vel ipsum
-          a metus tempus varius nec vitae velit. Etiam pretium, ipsum at rhoncus finibus, diam nisl
-          aliquam leo, nec scelerisque dui ex vitae justo. Nunc sit amet bibendum risus. In ac semper
-          nisi. Nullam dapibus lacus eu odio tincidunt, in faucibus arcu semper. Sed blandit orci vel
-          ante luctus venenatis. Nam semper bibendum est, id convallis dui tempor eu.
-        </p>
+        <div className='card'>
+          <img src={earth1} alt='banner' />
+
+          <div className="textbox">
+          <span style={{ fontSize: '2vw' }}>Hi</span>
+            <p>
+            My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink. I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up. I'm trying to explain that I'm a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn't lose to anyone.
+            </p>
+
+          </div>
+        </div>
+
+        <div className='card'>
+          <img src={earth1} alt='banner' />
+
+          <div className="textbox">
+            <h1>Lorem Ipsum</h1>
+            <p>
+            My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink. I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up. I'm trying to explain that I'm a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn't lose to anyone.
+            </p>
+
+          </div>
+        </div>
       </div>
     </div>
 

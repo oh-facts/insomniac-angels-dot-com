@@ -1,9 +1,11 @@
 body{
   background-color: #a4005b;
 }
+
 .App{
   display: flex;
   flex-direction: column;
+
 }
 
 .Background{
@@ -12,7 +14,7 @@ body{
 }
 
 .Background img{
-  width: 90%;
+  width: 80%;
   height: auto;
   pointer-events: none; 
 }
@@ -28,36 +30,76 @@ body{
   border: none;
   background-color: transparent;
   transition-duration: 0.2s;
-  font-size: 1.5vw;
+  font-size: 1vw;
   padding: 2%;
 }
 
 .Menubar button:hover {
-  box-shadow: inset 0 -2px 0 0 #ff9324;
+ /*
+  box-shadow: inset 1px 0 0 0 #ff9324;
+ */
   cursor: pointer;
-}
-.textbox {
-  color: #ff9324;
-  padding-right: 10%;
 }
 
 .about{
   display: flex;
-  padding-top: 10%;
+  flex-direction: column;
+ 
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
-.about img{
-  padding-right: 10%;
-  padding-left: 10%;
+
+
+.card{
+  display: flex;
+  flex-direction: column;
+  font-size: 1vw;
+  align-items: center;
+}
+
+.card img{
+  width: 16vw;
+  height: 20vw;
+  
+}
+
+.card-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 45vw;
+  
+}
+
+
+.card-container::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+ /*
+  background-image: url('assets/scroll.png');
+  background-size: 10vw;
+*/
+  background: transparent;
+}
+
+
+.textbox {
+  color: #ff9324;
+  text-align: center;
 }
 
 .top-line,
-.bottom-line {
+.bottom-line { 
   position: fixed;
   left: 0;
   width: 100%;
   height: 2px;
   background-color: #ff9324;
+
 }
 
 .left-line,
@@ -67,20 +109,21 @@ body{
   width: 2px;
   height: 100%;
   background-color: #ff9324;
+
 }
 
 .top-line {
-  top: 1vw;
+  top: 0.5vw;
 }
 
 .bottom-line {
-  bottom: 1vw;
+  bottom: 0.5vw;
 }
 
 .left-line {
-  left: 1vw;
+  left: 0.5vw;
 }
 
 .right-line {
-  right: 1vw;
+  right: 0.5vw;
 }
