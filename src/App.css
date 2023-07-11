@@ -1,39 +1,66 @@
-
 @font-face {
   font-family: 'Delius';
   src: url('assets/Delius-Regular.ttf') format('truetype');
 }
 
 
-body{
+body {
   background-color: #a4005b;
   font-family: 'Delius';
 }
 
-.App{
+.App {
   display: flex;
   flex-direction: column;
 
 }
 
-.Background{
+.Background {
   display: flex;
   justify-content: center;
 }
 
-.Background img{
+.Background img {
   width: 80%;
   height: auto;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
-.Menubar{
+.Menubar {
   display: flex;
   justify-content: center;
   gap: 5%;
+  position: relative;
 }
 
-.Menubar button{
+
+.dropdown-container {
+ display: flex;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  left: 0;
+  padding: 12px;
+  
+  background-color: #a4005b;
+  z-index: 100;
+  gap: 20px;
+  box-shadow: 0px 0px 1px 1px #ff9324;
+  box-sizing: border-box;
+  
+
+}
+
+.dropdown-menu button {
+  
+  text-align: left;
+}
+
+.Menubar button {
   color: #ff9324;
   border: none;
   background-color: transparent;
@@ -43,37 +70,37 @@ body{
 }
 
 .Menubar button:hover {
- /*
+  /*
   box-shadow: inset 1px 0 0 0 #ff9324;
  */
   cursor: pointer;
 }
 
-.about{
+.about {
   display: flex;
   flex-direction: column;
- 
+
   padding-left: 5vw;
   padding-right: 5vw;
 }
 
 
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   font-size: 1vw;
   align-items: center;
-  
+
 }
 
-.card img{
+.card img {
   width: 16vw;
   height: 20vw;
-  
+
 }
 
-.card-container{
+.card-container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -89,7 +116,7 @@ body{
 }
 
 .card-container::-webkit-scrollbar-thumb {
- /*
+  /*
   background-image: url('assets/scroll.png');
   background-size: 10vw;
 */
@@ -105,7 +132,7 @@ body{
 }
 
 .top-line,
-.bottom-line { 
+.bottom-line {
   position: fixed;
   left: 0;
   width: 100%;
@@ -138,4 +165,14 @@ body{
 
 .right-line {
   right: 0.5vw;
+}
+
+.Faq {
+  color: #ff9324;
+  justify-content: center;
+  display: flex;
+}
+
+.dropdown-container {
+  position: relative;
 }

@@ -1,7 +1,8 @@
 
 import './App.css';
 import Home from './pages/Home';
-import About from './pages/About';
+import Setting from './pages/Setting';
+import Faq from './pages/Faq';
 import MenuBar from './components/MenuBar';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -14,16 +15,17 @@ function App() {
         <div class="left-line"></div>
 
         <BrowserRouter>
-          <div className="Menubar">
-            <MenuBar />
-          </div>
+          <MenuBar />
 
 
           <Routes>
             <Route index element={<Home />} />
             <Route path="" element={<Home />} />
 
-            <Route path="/about" element={<About />} />
+        
+            <Route path="about/setting" element={<Setting />} />
+            <Route path="/faq" element={<Faq />} />
+
 
           </Routes>
 
