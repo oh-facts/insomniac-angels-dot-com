@@ -7,6 +7,7 @@ import MenuBar from './components/MenuBar';
 import Media from './pages/Media';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import About from './pages/About';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Routes>
             <Route index element={<Home />} />
             <Route path="" element={<Home />} />
-
+            <Route path="about" element={<About />} />
         
             <Route path="about/setting" element={<Setting />} />
             <Route path="media" element={<Media />} />

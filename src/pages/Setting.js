@@ -11,7 +11,7 @@ const Setting = () => {
             <div className='card'>
                 <img src={earth1} alt='banner' />
 
-                <div className="textbox">
+                <div className="text-box">
 
                     <p>
                         <span style={{ fontSize: '0.9vw', textAlign: 'left' }}>
@@ -27,7 +27,7 @@ const Setting = () => {
             <div className='card'>
                 <img src={earth2} alt='banner' />
 
-                <div className="textbox">
+                <div className="text-box">
 
                     <p>
                         <span style={{ fontSize: '0.9vw', textAlign: 'left' }}>

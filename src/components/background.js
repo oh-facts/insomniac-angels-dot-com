@@ -1,6 +1,8 @@
-import angel from '../assets/angelFace.png'
-import angel2 from '../assets/angelFace2.png'
-import titleBanner from "../assets/title.png"
+import angel from '../assets/homePageCard/angelFace.png'
+import angel2 from '../assets/homePageCard/angelFace2.png'
+import holo from "../assets/homePageCard/holo.png"
+import titleBanner from "../assets/homePageCard/title.png"
+
 import { useState } from 'react';
 
 const Background = () => {
@@ -18,6 +20,10 @@ const Background = () => {
     return (
 
         <div className="Background">
+            <img 
+            src={holo}
+            alt="holo"
+            />
 
             <img
                 src={isHovered ? angel2 : angel}
