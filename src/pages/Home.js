@@ -1,14 +1,14 @@
 
 import Background from '../components/background';
 
+
 const Home = () => {
     return (
-        <>
-            <div className="Background">
-                <Background />
-            </div>
+        <div className='home'>
 
-        </>
+            <Background />
+
+        </div>
     );
 }
 

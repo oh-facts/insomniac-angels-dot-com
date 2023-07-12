@@ -1,5 +1,44 @@
-import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+const SubMenu = ({ items }) => {
+    if (items.length === 0) {
+      return null; // Don't render the submenu if items array is empty
+    }
+  
+    return (
+      <ul className="sub-menu">
+        {items.map((item) => (
+          <li key={item.id}>
+            <Link to={item.path} className="sub-menu-link">
+              {item.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    );
+  };
+  
+
+const MenuItem = ({ title, path, subMenuItems }) => {
+  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+
+  const toggleSubMenu = () => {
+    setIsSubMenuOpen(!isSubMenuOpen);
+  };
+
+  return (
+    <div
+      className={`menu-item ${isSubMenuOpen ? 'open' : ''}`}
+      onMouseEnter={toggleSubMenu}
+      onMouseLeave={toggleSubMenu}
+    >
+      <Link to={path} className="menu-link">
+        {title}
+      </Link>
+      {isSubMenuOpen && <SubMenu items={subMenuItems} />}
+    </div>
+  );
+};
 
 const MenuBar = () => {
   const tabs = [
@@ -7,66 +46,30 @@ const MenuBar = () => {
     {
       title: "About",
       id: 2,
-      dropdownItems: [
-        { title: "Setting", id: 1, path: "/about/setting" },
-        { title: "Characters", id: 2, path: "/about/characters" },
-        { title: "Team", id: 3, path: "/about/team" },
-        { title: "Blog", id: 4, path: "/about/blog" },
+      path: "/about",
+      subMenuItems: [
+        { title: "Setting", id: 21, path: "/about/setting" },
+        { title: "Characters", id: 22, path: "/about/characters" },
+        { title: "Team", id: 23, path: "/about/team" },
       ],
     },
     { title: "Media", id: 3, path: "/media" },
     { title: "FAQ", id: 4, path: "/faq" },
     { title: "Contact", id: 5, path: "/contact" },
   ];
-  const navigate = useNavigate();
-  const [isAboutOpen, setIsAboutOpen] = useState(false);
-  
-
-  const handleDropdownItemClick = (path) => {
-    navigate(path);
-    setIsAboutOpen(false);
-  };  const handleAboutMouseEnter = () => {
-    setIsAboutOpen(true);
-  };
-
-  const handleAboutMouseLeave = () => {
-    setIsAboutOpen(false);
-  };
 
   return (
-    <div className="Menubar">
+    <div className="menu-bar">
       {tabs.map((tab) => (
-        <React.Fragment key={tab.id}>
-          {tab.dropdownItems ? (
-            <div
-              className="dropdown-container"
-              onMouseEnter={handleAboutMouseEnter}
-              onMouseLeave={handleAboutMouseLeave}
-            >
-              <button>
-                {tab.title}
-              </button>
-              {isAboutOpen && tab.title === "About" && (
-                <div className="dropdown-menu">
-                  {tab.dropdownItems.map((item) => (
-                    <button
-                      key={item.id}
-                      onClick={() => handleDropdownItemClick(item.path)}
-                    >
-                      {item.title}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-          ) : (
-            <button onClick={() => navigate(tab.path)}>
-              {tab.title}
-            </button>
-          )}
-        </React.Fragment>
+        <MenuItem
+          key={tab.id}
+          title={tab.title}
+          path={tab.path}
+          subMenuItems={tab.subMenuItems || []}
+        />
       ))}
     </div>
   );
 };
+
 export default MenuBar;

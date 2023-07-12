@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Setting from './pages/Setting';
 import Faq from './pages/Faq';
 import MenuBar from './components/MenuBar';
+import Media from './pages/Media';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -24,6 +25,8 @@ function App() {
 
         
             <Route path="about/setting" element={<Setting />} />
+            <Route path="media" element={<Media />} />
+
             <Route path="/faq" element={<Faq />} />
 
 
