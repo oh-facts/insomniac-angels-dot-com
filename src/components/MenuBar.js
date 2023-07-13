@@ -52,7 +52,6 @@ const MenuBar = () => {
     {
       title: "About",
       id: 2,
-      path: "/about",
       subMenuItems: [
         { title: "Setting", id: 21, path: "/about/setting" },
         { title: "Characters", id: 22, path: "/about/characters" },

@@ -15,7 +15,7 @@ const Team = () => {
                 <img
                     src={molly}
                     alt="molly"
-                    style={{ width: "30%" }}
+                    style={{ width: "20vw" , paddingTop:"5vw"}}
                 />
 
             </div>
