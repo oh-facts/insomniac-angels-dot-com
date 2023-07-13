@@ -8,37 +8,44 @@ import Media from './pages/Media';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
+import Characters from './pages/Characters';
+import Team from './pages/Team';
+import Community from './pages/Community';
 
 function App() {
   return (
     <div className="App">
-      <div className='margin-effect'>
-        <div class="top-line"></div>
-        <div class="left-line"></div>
 
-        <BrowserRouter>
-          <MenuBar />
+      <BrowserRouter>
+        <MenuBar />
 
 
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="" element={<Home />} />
-            <Route path="about" element={<About />} />
-        
-            <Route path="about/setting" element={<Setting />} />
-            <Route path="media" element={<Media />} />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="" element={<Home />} />
+          <Route path="about" element={<About />} />
 
-            <Route path="/faq" element={<Faq />} />
+          <Route path="about/setting" element={<Setting />} />
+          <Route path="about/characters" element={<Characters />} />
+
+          <Route path="about/team" element={<Team />} />
+          <Route path="media" element={<Media />} />
+
+          <Route path="/faq" element={<Faq />} />
+
+          <Route path="contact/community" element={<Community />} />
+
+        </Routes>
+
+      </BrowserRouter>
 
 
-          </Routes>
+      <div class="top-line"></div>
+      <div class="left-line"></div>
+      <div class="right-line"></div>
+      <div class="bottom-line"></div>
 
-        </BrowserRouter>
 
-
-        <div class="right-line"></div>
-        <div class="bottom-line"></div>
-      </div>
     </div>
   );
 }

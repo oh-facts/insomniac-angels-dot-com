@@ -34,12 +34,12 @@ const MenuItem = ({ title, path, subMenuItems }) => {
 
   return (
     <div
-      className={`menu-item ${isSubMenuOpen ? 'open' : ''}`}
+      className={`menu-item${isSubMenuOpen ? '-open' : ''}`}
       onMouseEnter={toggleSubMenu}
       onMouseLeave={toggleSubMenu}
     >
       <Link to={path} className="menu-link">
-        {title}
+      {title}
       </Link>
       {isSubMenuOpen && <SubMenu items={subMenuItems} />}
     </div>
@@ -56,7 +56,7 @@ const MenuBar = () => {
       subMenuItems: [
         { title: "Setting", id: 21, path: "/about/setting" },
         { title: "Characters", id: 22, path: "/about/characters" },
-        { title: "Team", id: 23, path: "https://www.youtube.com/" },
+        { title: "Team", id: 23, path: "/about/team" },
       ],
     },
     { title: "Media", id: 3, path: "/media" },
