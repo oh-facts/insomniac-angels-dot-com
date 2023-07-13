@@ -297,3 +297,9 @@ body {
   justify-content: center;
   display: flex;
 }
+
+.Team{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

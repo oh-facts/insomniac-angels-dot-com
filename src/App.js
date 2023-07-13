@@ -28,12 +28,12 @@ function App() {
           <Route path="about/setting" element={<Setting />} />
           <Route path="about/characters" element={<Characters />} />
 
-          <Route path="about/team" element={<Team />} />
+          <Route path="info/team" element={<Team />} />
           <Route path="media" element={<Media />} />
 
-          <Route path="/faq" element={<Faq />} />
+          <Route path="/info/faq" element={<Faq />} />
 
-          <Route path="contact/community" element={<Community />} />
+          <Route path="info/community" element={<Community />} />
 
         </Routes>
 

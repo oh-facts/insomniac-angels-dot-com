@@ -5,17 +5,17 @@ const Team = () => {
     return (
         <div className="Team">
 
-            {/*
-            <p style={{ fontSize: "45px"}}>
-                <b>Hello</b>
-
+            <p style={{ fontSize: "1vw", textIndent: "center" }}>
+                Based in Manhattan, Cosmic Bunny Studios is the art studio behind the project - Insomniac Angels.
             </p>
-            */}
+
+
+
             <div className="card-container">
                 <img
                     src={molly}
                     alt="molly"
-                    style={{ width: "20vw" , paddingTop:"5vw"}}
+                    style={{ width: "20vw", paddingTop: "5vw" }}
                 />
 
             </div>

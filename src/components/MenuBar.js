@@ -55,18 +55,20 @@ const MenuBar = () => {
       subMenuItems: [
         { title: "Setting", id: 21, path: "/about/setting" },
         { title: "Characters", id: 22, path: "/about/characters" },
-        { title: "Team", id: 23, path: "/about/team" },
+        
       ],
     },
     { title: "Media", id: 3, path: "/media" },
-    { title: "FAQ", id: 4, path: "/faq" },
+    
     {
-      title: "Contact",
+      title: "Info",
       id: 5,
-      path: "/contact",
       subMenuItems: [
-        { title: "Youtube \u2197", id: 51, path: "https://www.youtube.com/channel/UCfYuZbToCun8OkYJ5K37Nig" },
-        { title: "community", id: 52, path: "/contact/community" }
+        { title: "Team", id: 51, path: "/info/team" },
+        { title: "Youtube \u2197", id: 52, path: "https://www.youtube.com/channel/UCfYuZbToCun8OkYJ5K37Nig" },
+        { title: "community", id: 53, path: "/info/community" },
+        
+        { title: "FAQ", id: 54, path: "/info/faq" }
       ]
     },
   ];
