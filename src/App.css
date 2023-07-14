@@ -41,7 +41,7 @@ body {
 
 .menu-item {
   display: flex;
-  font-size: 1vw;
+  font-size: 1rem;
  
 
   transition-duration: 0.2s;
@@ -66,7 +66,7 @@ body {
 */
 .menu-item-open{
   display: flex;
-  font-size: 1vw;
+
   transition-duration: 0.2s;
   transition: transform 0.2s ease;
   z-index: 10;
@@ -80,12 +80,12 @@ body {
 .sub-menu {
   list-style-type: none;
   position: absolute;
-  left: -1.6vw;
-  top: 2vw
+  left: -1.6rem;
+  top: 2rem;
 }
 
 .sub-menu-link {
-  padding: 0.6vw;
+  padding: 0.6em;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -183,10 +183,10 @@ body {
 .media-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2vw;
-  padding-top: 2vw;
-  padding-left: 6vw;
-  padding-right: 6vw;
+  gap: 0.25em;
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   justify-content: center;
 }
 
@@ -270,8 +270,8 @@ body {
 .right-line {
   position: fixed;
   top: 0;
-  width: 0.1vw;
-  height: 100%;
+  width: 0.2em;
+  height: 80em;
   background-color: #ff9324;
 
 }
