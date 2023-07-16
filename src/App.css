@@ -272,26 +272,26 @@ body {
 .right-line {
   position: fixed;
   top: 0;
-  width: 0.15%;
-  height: 100%;
+  width: 0.15rem;
+  height: 100rem;
   background-color: #ff9324;
 
 }
 
 .top-line {
-  top: 0.5vw;
+  top: 0.5rem;
 }
 
 .bottom-line {
-  bottom: 0.5vw;
+  bottom: 0.5rem;
 }
 
 .left-line {
-  left: 0.5vw;
+  left: 0.5rem;
 }
 
 .right-line {
-  right: 0.5vw;
+  right: 0.5rem;
 }
 
 .Faq {
