@@ -5,7 +5,7 @@ const Team = () => {
     return (
         <div className="Team">
 
-            <p style={{ fontSize: "1vw", textIndent: "center" }}>
+            <p style={{ textIndent: "center" }}>
                 Based in Manhattan, Cosmic Bunny Studios is the art studio behind the project - Insomniac Angels.
             </p>
 

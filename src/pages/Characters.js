@@ -6,7 +6,7 @@ const Characters = () => {
     return (
         <div className="card-container">
 
-            <p style={{ fontFamily: 'Source Sans Pro', fontSize: '1vw' }}>{unicodeString}</p>
+            <p style={{ fontFamily: 'Source Sans Pro'}}>{unicodeString}</p>
         </div>
     );
      
