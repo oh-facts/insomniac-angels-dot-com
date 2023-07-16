@@ -29,60 +29,51 @@ body {
   align-items: center;
   padding-top: 5vw;
 }
-
-
 .menu-bar {
   display: flex;
   justify-content: center;
   padding: 1vw;
-  gap:10vw;
   position: relative;
- 
 }
 
 .menu-item {
   display: flex;
   font-size: 1.25rem;
- 
-
   transition-duration: 0.2s;
   transition: transform 0.2s ease;
-  
-
+  position: relative;
 }
 
 .menu-link {
   text-decoration: none;
-
   color: #ff9324;
-
   padding: 1vw;
-
 }
 
-/*
-.menu-link:hover{
-  text-decoration: underline;
-}
-*/
-.menu-item-open{
+.menu-item-open {
   display: flex;
   font-size: 1.25rem;
   transition-duration: 0.2s;
   transition: transform 0.2s ease;
   z-index: 10;
 }
+
 .menu-item-open:hover {
   z-index: 10;
   transform: translateY(1vw);
- 
 }
 
 .sub-menu {
   list-style-type: none;
   position: absolute;
-  left: -1.6vw;
-  top: 2vw
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  display: none;
+}
+
+.menu-item-open:hover .sub-menu {
+  display: block;
 }
 
 .sub-menu-link {
@@ -91,39 +82,15 @@ body {
   flex-direction: column;
   text-decoration: none;
   color: #ff9324;
-
-  /*
-  
-  */
   transition: transform 0.2s ease;
-  /*
-  */
   background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(0.25rem);
-  
-  box-shadow: 0px 0px 0px 0.05rem #ff9324;
-  
-  /*
- background-color: rgba(0, 0, 0, 0.2);
-  */
-
-
-
-
+  backdrop-filter: blur(1rem);
 }
 
-
 .sub-menu-link:hover {
-  /*
-  background-color: #f0f0f0;
-  */
-  /*
- 
-  */
   background-color: rgba(0, 0, 0, 0.2);
   transform: translate(1vw);
 }
-
 
 
 .about {
