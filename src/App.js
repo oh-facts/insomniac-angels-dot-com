@@ -19,13 +19,14 @@ function App() {
   return (
     <div className="App">
 
-  
-      <BrowserRouter>
 
+      <BrowserRouter>
+        {/*
         {
           isMobile ? <MenuBarPhone /> : <MenuBar />
         }
-
+      */}
+        <MenuBar />
 
         <Routes>
           <Route index element={<Home />} />

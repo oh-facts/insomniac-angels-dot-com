@@ -29,11 +29,13 @@ body {
   align-items: center;
   padding-top: 5vw;
 }
+
 .menu-bar {
   display: flex;
   justify-content: center;
   padding: 1vw;
   position: relative;
+  gap:10rem;
 }
 
 .menu-item {
@@ -85,11 +87,26 @@ body {
   transition: transform 0.2s ease;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(1rem);
+  white-space: nowrap;
 }
 
 .sub-menu-link:hover {
   background-color: rgba(0, 0, 0, 0.2);
   transform: translate(1vw);
+}
+
+@media (max-width: 768px) {
+  .menu-bar {
+    flex-wrap: wrap;
+    gap: 0.5vw;
+  }
+  
+  .menu-item {
+    font-size: 1rem;
+  }
+  .menu-item-open{
+    font-size: 1rem;
+  }
 }
 
 
