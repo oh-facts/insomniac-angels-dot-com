@@ -20,18 +20,18 @@ const Background = () => {
     return (
 
         <div className="Background">
-            <img style={{width:"50%"}}
+            <img style={{width:"18%"}}
             src={holo}
             alt="holo"
             />
 
-            <img style={{width:"50%"}}
+            <img style={{width:"20%"}}
                 src={isHovered ? angel2 : angel}
                 alt="banner"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             />
-            <img style={{width:"50%"}}
+            <img style={{width:"45%"}}
                 src={titleBanner}
                 alt="title"
             />

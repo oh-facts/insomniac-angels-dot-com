@@ -66,7 +66,7 @@ const MenuBar = () => {
       subMenuItems: [
         { title: "Team", id: 51, path: "/info/team" },
         { title: "Youtube \u2197", id: 52, path: "https://www.youtube.com/channel/UCfYuZbToCun8OkYJ5K37Nig" },
-        { title: "community", id: 53, path: "/info/community" },
+        { title: "com", id: 53, path: "/info/community" },
         
         { title: "FAQ", id: 54, path: "/info/faq" }
       ]

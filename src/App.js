@@ -7,17 +7,24 @@ import MenuBar from './components/MenuBar';
 import Media from './pages/Media';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { isMobile } from "react-device-detect";
 import About from './pages/About';
 import Characters from './pages/Characters';
 import Team from './pages/Team';
 import Community from './pages/Community';
+import MenuBarPhone from './components/MenuBarPhone';
 
 function App() {
+
   return (
     <div className="App">
 
+  
       <BrowserRouter>
-        <MenuBar />
+
+        {
+          isMobile ? <MenuBarPhone /> : <MenuBar />
+        }
 
 
         <Routes>
