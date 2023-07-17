@@ -4,12 +4,15 @@ const Characters = () => {
 
 
     return (
-        <div className="card-container">
+        <div style={{display:"flex",justifyContent:"center"}}>
+            <div className="card-container">
 
-            <p style={{ fontFamily: 'Source Sans Pro'}}>{unicodeString}</p>
+                <p style={{ fontFamily: 'Source Sans Pro' }}>{unicodeString}</p>
+            </div>
         </div>
+
     );
-     
+
 }
 
 export default Characters;

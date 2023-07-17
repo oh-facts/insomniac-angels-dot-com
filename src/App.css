@@ -8,6 +8,7 @@ body {
   background-color: #a4005b;
   font-family: 'Delius';
   font-size: 1.25rem;
+  color: #ff9324;
 }
 
 .App {
@@ -107,6 +108,9 @@ body {
   .menu-item-open{
     font-size: 1rem;
   }
+  .card-container{
+    font-size: 1rem;
+  }
 }
 
 
@@ -136,11 +140,12 @@ body {
 .card-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   overflow-y: scroll;
-  height: 55rem;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  height: 90%;
+  width: 90%;
+
 }
 
 
@@ -217,8 +222,8 @@ body {
 
 .previous-button,
 .next-button {
-  bottom: 50%;
-  position: fixed;
+  
+  
   padding: 2rem 4rem;
   cursor: pointer;
   background-color: transparent;
@@ -228,14 +233,14 @@ body {
 }
 
 .previous-button {
-  left: 25rem;
+  
 
   background-image: url("assets/arrow2.png");
 
 }
 
 .next-button {
-  right: 25rem;
+  
 
   background-image: url("assets/arrow1.png");
 }
