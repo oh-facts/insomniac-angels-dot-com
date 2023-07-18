@@ -3,12 +3,9 @@
   src: url('assets/Delius-Regular.ttf') format('truetype');
 }
 
-:focus,
-:active {
-  outline: none;
-
+*{
+  -webkit-tap-highlight-color: transparent;
 }
-
 
 body {
   background-color: #a4005b;
