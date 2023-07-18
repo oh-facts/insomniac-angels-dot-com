@@ -37,10 +37,9 @@ body {
 .menu-bar {
   display: flex;
   justify-content: center;
-  gap:25%;
-  padding-top: 0.5rem;
+  padding-top: 2%;
   position: relative;
-  gap:10rem;
+ 
 }
 
 .menu-item {
@@ -162,19 +161,17 @@ body {
   line-height: 2;
 }
 
-
 .media-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
-  padding-top: 2rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  justify-content: center;
+  gap: 1%;
+  padding-top: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .media-item {
-  flex: 0 0 12rem;
+  flex: 0 0 calc(16.66% - 20px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,15 +206,15 @@ body {
 .lightbox-image {
   width: 100%;
   height: auto;
-  max-height: 100%;
+  max-height: calc(100% - 40px);
 
 }
 
 .previous-button,
 .next-button {
-  
-  
-  padding: 2rem 4rem;
+  bottom: 25vw;
+  position: fixed;
+  padding: 2.5% 5%;
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -226,18 +223,17 @@ body {
 }
 
 .previous-button {
-  
+  left: 25vw;
 
   background-image: url("assets/arrow2.png");
 
 }
 
 .next-button {
-  
+  right: 25vw;
 
   background-image: url("assets/arrow1.png");
 }
-
 
 .top-line,
 .bottom-line {

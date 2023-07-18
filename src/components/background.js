@@ -20,12 +20,12 @@ const Background = () => {
     return (
 
         <div className="Background">
-            <img style={{width:"18%"}}
+            <img style={{width:"30%"}}
             src={holo}
             alt="holo"
             />
 
-            <img style={{width:"20%"}}
+            <img style={{width:"30%"}}
                 src={isHovered ? angel2 : angel}
                 alt="banner"
                 onMouseEnter={handleMouseEnter}
