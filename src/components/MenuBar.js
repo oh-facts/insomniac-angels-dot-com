@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const SubMenuItem = ({ item, onCloseSubMenu }) => {
   const handleClick = () => {
-    // Call the onCloseSubMenu function to close the sub-menu
     onCloseSubMenu();
   };
 
@@ -38,6 +37,11 @@ const SubMenu = ({ items, onCloseSubMenu }) => {
 
 const MenuItem = ({ title, path, subMenuItems }) => {
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsSubMenuOpen(false);
+  }, [location.pathname]); // Close the sub-menu only when the pathname changes
 
   const toggleSubMenu = () => {
     setIsSubMenuOpen(!isSubMenuOpen);
@@ -95,4 +99,3 @@ const MenuBar = () => {
 };
 
 export default MenuBar;
- 

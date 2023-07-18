@@ -31,7 +31,7 @@ const Background = () => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             />
-            <img style={{width:"45%"}}
+            <img style={{width:"65%"}}
                 src={titleBanner}
                 alt="title"
             />
