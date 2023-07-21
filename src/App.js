@@ -21,24 +21,27 @@ function App() {
       <BrowserRouter>
 
         <MenuBar />
+        <div className='viewport'>
+          <Routes>
 
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="" element={<Home />} />
-          <Route path="about" element={<About />} />
+            <Route index element={<Home />} />
+            <Route path="" element={<Home />} />
+            <Route path="about" element={<About />} />
 
-          <Route path="about/setting" element={<Setting />} />
-          <Route path="about/characters" element={<Characters />} />
+            <Route path="about/setting" element={<Setting />} />
+            <Route path="about/characters" element={<Characters />} />
 
-          <Route path="info/team" element={<Team />} />
-          <Route path="media" element={<Media />} />
+            <Route path="info/team" element={<Team />} />
+            <Route path="media" element={<Media />} />
 
-          <Route path="/info/faq" element={<Faq />} />
+            <Route path="/info/faq" element={<Faq />} />
 
-          <Route path="info/community" element={<Community />} />
+            <Route path="info/community" element={<Community />} />
 
-        </Routes>
 
+
+          </Routes>
+        </div>
       </BrowserRouter>
 
 
@@ -48,7 +51,7 @@ function App() {
       <div class="bottom-line"></div>
 
 
-    </div>
+    </div >
   );
 }
 

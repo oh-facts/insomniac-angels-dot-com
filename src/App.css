@@ -7,6 +7,30 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+
+.viewport {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 88vh;
+  padding-left: 15%;
+  padding-right: 15%;
+
+}
+
+.viewport::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.viewport::-webkit-scrollbar-thumb {
+  /*
+  background-image: url('assets/scroll.png');
+  background-size: 10vw;
+*/
+  background: transparent;
+}
+
 body {
   background-color: #a4005b;
   font-family: 'Delius';
@@ -17,7 +41,6 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-
 }
 
 .home {
@@ -37,19 +60,19 @@ body {
 }
 
 .holo-image {
-  width: 36%;
+  width: 46%;
 }
 
 .angel-image {
-  width: 40%;
+  width: 50%;
 }
 
 .hovered-image {
-  width: 40%;
+  width: 50%;
 }
 
 .title-image {
-  width: 75%;
+  width: 85%;
 }
 
 .menu-bar {
@@ -202,10 +225,7 @@ body {
   justify-content: center;
   justify-items: center;
   flex-direction: column;
-  overflow: auto;
 
-  padding-left: 15%;
-  padding-right: 15%;
 
 }
 
