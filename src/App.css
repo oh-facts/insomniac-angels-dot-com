@@ -195,11 +195,6 @@ body {
 
 }
 
-.card img {
-  width: 16rem;
-  height: 20rem;
-
-}
 
 .card-container {
   display: flex;
@@ -208,16 +203,15 @@ body {
   justify-items: center;
   flex-direction: column;
   overflow: auto;
-  height: 90%;
-  width: 90%;
 
+  padding-left: 15%;
+  padding-right: 15%;
 
 }
 
 .text-box {
   color: #ff9324;
-  padding-left: 5rem;
-  padding-right: 5rem;
+
   line-height: 2;
 }
 
