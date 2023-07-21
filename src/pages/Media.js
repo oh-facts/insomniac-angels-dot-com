@@ -3,6 +3,8 @@ import image1 from '../assets/balloon.png';
 import image2 from '../assets/earth1.jpg';
 import image3 from '../assets/earth2.jpg';
 
+import '../styles/pages/Media.css'
+
 const images = [image1, image2, image3, image1, image2, image1, image2, image3];
 
 const Media = () => {

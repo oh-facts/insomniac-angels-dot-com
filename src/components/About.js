@@ -1,5 +1,6 @@
 import scene1 from '../assets/homePage/scene1.png'
 import earth1 from '../assets/earth1.jpg'
+import '../styles/components/About.css'
 
 const About = () => {
 

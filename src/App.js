@@ -1,5 +1,7 @@
 
 import './App.css';
+import './styles/Common.css'
+
 import Home from './pages/Home';
 import Setting from './pages/Setting';
 import Faq from './pages/Faq';
@@ -7,7 +9,7 @@ import MenuBar from './components/MenuBar';
 import Media from './pages/Media';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import About from './pages/About';
+import About from './components/About';
 import Characters from './pages/Characters';
 import Team from './pages/Team';
 import Community from './pages/Community';

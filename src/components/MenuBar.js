@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+import '../styles/components/MenuBar.css'
+
+
 const SubMenuItem = ({ item, onCloseSubMenu }) => {
   const handleClick = () => {
     onCloseSubMenu();

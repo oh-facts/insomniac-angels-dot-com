@@ -5,6 +5,8 @@ import titleBanner from "../assets/homePage/angel/title.png"
 
 import { useState } from 'react';
 
+import '../styles/components/AngelFace.css'
+
 const Background = () => {
 
 
@@ -18,7 +20,7 @@ const Background = () => {
         setIsHovered(false);
     };
     return (
-
+ 
        
         <div className='angel-image'>
           <img className="holo-image"
