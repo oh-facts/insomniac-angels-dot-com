@@ -1,5 +1,6 @@
 
 import Background from '../components/background';
+import About from './About';
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <div className='home'>
 
             <Background />
+            <About />
 
         </div>
     );

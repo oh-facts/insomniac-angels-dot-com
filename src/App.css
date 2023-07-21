@@ -3,7 +3,7 @@
   src: url('assets/Delius-Regular.ttf') format('truetype');
 }
 
-*{
+* {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -23,15 +23,33 @@ body {
 .home {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-.Background {
+.angel-image {
   display: flex;
   justify-content: center;
+  justify-items: center;
   flex-direction: column;
   align-items: center;
   padding-top: 5%;
+}
+
+.holo-image {
+  width: 36%;
+}
+
+.angel-image {
+  width: 40%;
+}
+
+.hovered-image {
+  width: 40%;
+}
+
+.title-image {
+  width: 75%;
 }
 
 .menu-bar {
@@ -39,12 +57,12 @@ body {
   justify-content: center;
   padding-top: 2%;
   position: relative;
- 
+
 }
 
 .menu-item {
   display: flex;
-  
+
   font-size: 1.25rem;
   transition-duration: 0.2s;
   transition: transform 0.2s ease;
@@ -100,23 +118,65 @@ body {
   transform: translate(0.8rem);
 }
 
-@media (max-width: 924px) {
-  .menu-bar {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  
+
+@media (max-width: 600px) {
+
   .menu-item {
     font-size: 1rem;
   }
-  .menu-item-open{
+
+  .menu-item-open {
     font-size: 1rem;
   }
-  .card-container{
+
+  .card-container {
     font-size: 1rem;
+  }
+
+  .holo-image {
+    width: 70%;
+  }
+
+  .angel-image {
+    width: 80%;
+  }
+
+  .hovered-image {
+    width: 80%;
+  }
+
+  .title-image {
+    width: 95%;
   }
 }
 
+@media (min-width:601px) and (max-width: 1024px) {
+
+  .menu-item {
+    font-size: 2rem;
+  }
+
+  .menu-item-open {
+    font-size: 2rem;
+  }
+
+  .holo-image {
+    width: 70%;
+  }
+
+  .angel-image {
+    width: 80%;
+  }
+
+  .hovered-image {
+    width: 80%;
+  }
+
+  .title-image {
+    width: 95%;
+  }
+
+}
 
 .about {
   display: flex;
@@ -147,7 +207,7 @@ body {
   justify-content: center;
   justify-items: center;
   flex-direction: column;
-  overflow:auto;
+  overflow: auto;
   height: 90%;
   width: 90%;
 
@@ -171,7 +231,7 @@ body {
 }
 
 .media-item {
-  flex: 0 0 calc(16.66% - 20px);
+  flex: 0 0 15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,7 +337,7 @@ body {
   display: flex;
 }
 
-.Team{
+.Team {
   display: flex;
   align-items: center;
   flex-direction: column;

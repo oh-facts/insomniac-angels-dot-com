@@ -1,7 +1,7 @@
-import angel from '../assets/homePageCard/angelFace.png'
-import angel2 from '../assets/homePageCard/angelFace2.png'
-import holo from "../assets/homePageCard/holo.png"
-import titleBanner from "../assets/homePageCard/title.png"
+import angel from '../assets/homePage/angel/angelFace.png'
+import angel2 from '../assets/homePage/angel/angelFace2.png'
+import holo from "../assets/homePage/angel/holo.png"
+import titleBanner from "../assets/homePage/angel/title.png"
 
 import { useState } from 'react';
 
@@ -19,23 +19,26 @@ const Background = () => {
     };
     return (
 
-        <div className="Background">
-            <img style={{width:"30%"}}
+       
+        <div className='angel-image'>
+          <img className="holo-image"
             src={holo}
             alt="holo"
-            />
-
-            <img style={{width:"30%"}}
-                src={isHovered ? angel2 : angel}
-                alt="banner"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-            />
-            <img style={{width:"65%"}}
-                src={titleBanner}
-                alt="title"
-            />
+          />
+      
+          <img className={`angel-image ${isHovered ? "hovered-image" : ""}`}
+            src={isHovered ? angel2 : angel}
+            alt="banner"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          />
+          <img className="title-image"
+            src={titleBanner}
+            alt="title"
+          />
         </div>
+     
+      
     );
 }
 
