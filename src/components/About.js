@@ -5,9 +5,7 @@ import '../styles/components/About.css'
 const About = () => {
 
   return (
-    <div className='card-container'>
-
-
+  
       <div className='card'>
        
         <img src={scene1} alt='scene1' style={{width:"40%", paddingTop:"7%"}} />
@@ -30,7 +28,7 @@ const About = () => {
           </p>
 
         </div>
-      </div>
+     
 
 
 

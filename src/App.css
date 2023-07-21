@@ -49,7 +49,7 @@ body {
   position: fixed;
   left: 0;
   width: 100%;
-  height: 0.2%;
+  height: 0.2rem;
   background-color: #ff9324;
 
 }
@@ -58,26 +58,26 @@ body {
 .right-line {
   position: fixed;
   top: 0;
-  width: 0.2%;
+  width: 0.2rem;
   height: 100%;
   background-color: #ff9324;
 
 }
 
 .top-line {
-  top: 1%;
+  top: 0.5rem;
 }
 
 .bottom-line {
-  bottom: 1%;
+  bottom: 0.5rem;
 }
 
 .left-line {
-  left: 0.5%;
+  left: 0.5rem;
 }
 
 .right-line {
-  right: 0.5%;
+  right: 0.5rem;
 }
 
 .Faq {
