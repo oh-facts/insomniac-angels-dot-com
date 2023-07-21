@@ -21,9 +21,7 @@ const Background = () => {
     };
     return (
  
-       <div className='card'>
-
-       
+    
         <div className='angel-image'>
           <img className="holo-image"
             src={holo}
@@ -41,7 +39,7 @@ const Background = () => {
             alt="title"
           />
         </div>
-        </div>
+        
       
     );
 }

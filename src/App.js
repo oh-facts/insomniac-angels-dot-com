@@ -13,6 +13,7 @@ import About from './components/About';
 import Characters from './pages/Characters';
 import Team from './pages/Team';
 import Community from './pages/Community';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
 
       <BrowserRouter>
 
-        <MenuBar />
+      <MenuBar />
         <div className='viewport'>
           <Routes>
 
@@ -44,6 +45,7 @@ function App() {
 
           </Routes>
         </div>
+        <Footer />
       </BrowserRouter>
 
 
