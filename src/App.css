@@ -13,10 +13,9 @@
   align-items: center;
   flex-direction: column;
   overflow-y: scroll;
-  max-height: 88vh;
+  height: 88vh;
   padding-left: 15%;
   padding-right: 15%;
-  padding-top: 10%;
   
 }
 
