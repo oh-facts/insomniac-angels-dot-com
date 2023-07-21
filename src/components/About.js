@@ -1,5 +1,5 @@
 import scene1 from '../assets/homePage/scene1.png'
-import earth1 from '../assets/earth1.jpg'
+
 import '../styles/components/About.css'
 
 const About = () => {
@@ -8,7 +8,7 @@ const About = () => {
 
     <div className='about'>
 
-      <img src={scene1} alt='scene1' style={{ width: "40%", paddingTop: "7%" }} />
+      <img className="scene1" src={scene1} alt='scene1'/>
 
       <div className='text-box'>
 
@@ -21,22 +21,11 @@ const About = () => {
         they have little intention of being ripped up.
         <br />
         <br />
-        (ALF)IA is a first person story driven hack and slasher
+        (ALF)IA is a first person story driven (RPG? Roguelite? soulslike?) with ()
 
       </div>
 
-      <span style={{ fontSize: '2vw', textAlign: 'center', color: ' #ff9324' }}> A Godless World </span>
-      <img src={earth1} alt='banner' style={{ width: "25%", paddingTop: "5%" }} />
-
-
-
-      < div className='text-box'>
-
-        Welcome to Yinneva, where the people are tired, the devils are in excess, and the Gods are quite dead. Thankfully,
-        some angels still exist and make genuine attempts at preserving the human race. God bless Yinneva.
-
-      </div>
-
+   
     </div>
 
 
