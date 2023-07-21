@@ -36,11 +36,13 @@ body {
   font-family: 'Delius';
   font-size: 1.25rem;
   color: #ff9324;
+  overflow: hidden;
 }
 
 .App {
   display: flex;
   flex-direction: column;
+  
 }
 
 
