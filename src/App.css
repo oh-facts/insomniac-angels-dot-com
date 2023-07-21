@@ -51,7 +51,7 @@ body {
   position: fixed;
   left: 0;
   width: 100%;
-  height: 0.4%;
+  height: 0.2rem;
   background-color: #ff9324;
 
 }
@@ -60,7 +60,7 @@ body {
 .right-line {
   position: fixed;
   top: 0;
-  width: 0.2%;
+  width: 0.2rem;
   height: 100%;
   background-color: #ff9324;
 
