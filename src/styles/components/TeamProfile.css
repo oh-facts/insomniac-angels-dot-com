@@ -1,0 +1,12 @@
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+    column-gap: 2%;
+    margin-bottom: 2%;
+
+}
+
+img.profile{
+   width: 40%;
+}

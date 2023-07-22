@@ -44,7 +44,7 @@ const MenuItem = ({ title, path, subMenuItems }) => {
 
   useEffect(() => {
     setIsSubMenuOpen(false);
-  }, [location.pathname]); // Close the sub-menu only when the pathname changes
+  }, [location.pathname]);
 
   const toggleSubMenu = () => {
     setIsSubMenuOpen(!isSubMenuOpen);

@@ -1,5 +1,6 @@
-import molly from "../assets/team/molly.png"
 import table from "../assets/team/table.png"
+import TeamProfile from "../components/TeamProfile.js";
+
 
 import "../styles/pages/Team.css"
 
@@ -8,6 +9,9 @@ const Team = () => {
 
     return (
         <div className="Team">
+            <h1>
+                Cosmic Bunny Studios
+            </h1>
             <div className="studio-container">
 
                 <img className="studio"
@@ -21,8 +25,21 @@ const Team = () => {
             </div>
 
             <div className="text-box" >
-                Based in Manhattan, Cosmic Bunny Studios is the art studio behind the project - Insomniac Angels.
+                <br />
+                Based in Manhattan, Cosmic Bunny Studios (unregistered) is the art studio behind the project - Insomniac Angels. Founded by Cosmic Bunny, while they were
+                writing their book. "No one's ever going to read this. This made my writing group a bit uncomfortable, after some very positive and encouraging sessions previous to this.
+                I don't even know what to do. Who am I even wiriting this for? I KNOW! Why don't I try making it into a game? People like games???
+                <br />
+                <br />
+                The studio currently has three members including them.
+                <br />
+                <br />
+                (ALF)IA is their debut.
             </div>
+
+            <h1>Meet the Team</h1>
+           <TeamProfile />
+
         </div>
 
 
