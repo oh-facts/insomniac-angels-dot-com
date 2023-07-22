@@ -18,7 +18,7 @@
 
 .text-box {
     color: #ff9324;
-
+    padding-bottom: 2%;
     line-height: 2;
 }
 
@@ -29,4 +29,12 @@
         font-size: 1rem;
     }
 
+}
+
+
+hr {
+    border: none;
+    width: 50%;
+    background-color: #ff9324;
+    height: 0.1rem;
 }

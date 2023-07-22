@@ -1,0 +1,36 @@
+.Team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.studio {
+    width: 50%;
+  z-index: 5;
+}
+
+.studio-overlay {
+    position: absolute;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.452), #00000000);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: 50%;
+    height: 100%;
+    top:0;
+
+}
+
+.studio-container{
+    
+    margin-top: 10%;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   
+}
+
+/*
+is this a joke? is this how an overlay is added?
+*/

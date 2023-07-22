@@ -10,13 +10,13 @@
 
 .viewport {
   display: flex;
-  align-items: center;
+
   flex-direction: column;
   overflow-y: scroll;
   height: 88vh;
   padding-left: 15%;
   padding-right: 15%;
-  
+  align-content: center
 }
 
 .viewport::-webkit-scrollbar {
@@ -31,6 +31,19 @@
   background: transparent;
 }
 
+
+@media (max-width: 600px) {
+  .viewport{
+    padding-left: 4%;
+    padding-right: 0.5%;
+  }
+}
+
+@media (min-width:601px) and (max-width: 1024px) {}
+
+
+
+
 body {
   background-color: #a4005b;
   font-family: 'Delius';
@@ -42,7 +55,8 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -88,8 +102,13 @@ body {
   display: flex;
 }
 
-.Team {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+
+/*
+
+
+@media (max-width: 600px) {}
+
+@media (min-width:601px) and (max-width: 1024px) {}
+
+
+*/

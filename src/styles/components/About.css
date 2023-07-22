@@ -6,12 +6,24 @@
 }
 
 .scene1 {
-  width: 40%;
+  width: 50%;
   padding-top: 7%;
   padding-bottom: 7%;
 }
 
 
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+  .scene1 {
+    width: 85%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+}
 
-@media (min-width:601px) and (max-width: 1024px) {}
+@media (min-width:601px) and (max-width: 1024px) {
+  .scene1 {
+    width: 95%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+}

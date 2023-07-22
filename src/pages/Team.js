@@ -1,23 +1,30 @@
 import molly from "../assets/team/molly.png"
+import table from "../assets/team/table.png"
+
+import "../styles/pages/Team.css"
+
 const Team = () => {
 
 
     return (
         <div className="Team">
+            <div className="studio-container">
 
-            <div className="card-container">
-                <p style={{ textIndent: "center" }}>
-                    Based in Manhattan, Cosmic Bunny Studios is the art studio behind the project - Insomniac Angels.
-                </p>
-                <img
-                    src={molly}
+                <img className="studio"
+                    src={table}
                     alt="molly"
-                    style={{ width: "20rem", paddingTop: "5rem" }}
+
                 />
+                <div className="studio-overlay" />
+
 
             </div>
 
+            <div className="text-box" >
+                Based in Manhattan, Cosmic Bunny Studios is the art studio behind the project - Insomniac Angels.
+            </div>
         </div>
+
 
     );
 }

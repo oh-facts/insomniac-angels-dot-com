@@ -21,7 +21,7 @@ const About = () => {
         they have little intention of being ripped up.
         <br />
         <br />
-        (ALF)IA is a first person story driven (RPG? Roguelite? soulslike?) with ()
+        (ALF)IA is a first person stylistic slasher with a heavy emphasis on story and exploration. You'll be responsible for the choices you make, and the people it affects.
 
       </div>
 
