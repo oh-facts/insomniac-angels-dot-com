@@ -39,22 +39,28 @@ const Media = () => {
   };
 
   return (
-    <div className="media-grid">
-      {images.map((image, index) => (
-        <div className="media-item" key={index} onClick={() => openLightbox(image, index)}>
-          <img src={image} alt={`${index + 1}`} />
-        </div>
-      ))}
-      {lightboxOpen && (
-        <div className="lightbox-container" onClick={closeLightbox}>
-          <div className="lightbox-content">
-            <img className="lightbox-image" src={selectedImage} alt="Selected" />
-            <button className="previous-button" onClick={(event) => showPreviousImage(event)} />
-            <button className="next-button" onClick={(event) => showNextImage(event)} />
+
+    <>
+      <h1> Under construction </h1>
+      <div className="media-grid">
+
+        {images.map((image, index) => (
+          <div className="media-item" key={index} onClick={() => openLightbox(image, index)}>
+            <img src={image} alt={`${index + 1}`} />
           </div>
-        </div>
-      )}
-    </div>
+        ))}
+        {lightboxOpen && (
+          <div className="lightbox-container" onClick={closeLightbox}>
+            <div className="lightbox-content">
+              <img className="lightbox-image" src={selectedImage} alt="Selected" />
+              <button className="previous-button" onClick={(event) => showPreviousImage(event)} />
+              <button className="next-button" onClick={(event) => showNextImage(event)} />
+            </div>
+          </div>
+        )}
+      </div>
+    </>
+
   );
 };
 

@@ -29,14 +29,17 @@ const Setting = () => {
 
             <hr />
 
-            <h2> A Godless World </h2>
-
-
-
+            <h2> The boroughs </h2>
 
             < div className='text-box'>
-                Welcome to Yinneva, a place so wonderful, the planet was named after it. Or maybe it was the other way round? God bless Yinneva.
-
+                The city is divided into five boroughs.
+                <ol>
+                    <li>Moon</li>
+                    <li>Madilyn</li>
+                    <li>The Sox</li>
+                    <li>Duchess</li>
+                    <li>Tensi</li>
+                </ol>
             </div>
 
         </div>
