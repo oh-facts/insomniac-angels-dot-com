@@ -27,12 +27,10 @@ const Team = () => {
             <div className="text-box" >
                 <br />
                 Based in Manhattan, Cosmic Bunny Studios (unregistered) is the art studio behind the project - Insomniac Angels. Founded by Cosmic Bunny, while they were
-                writing their book. "No one's ever going to read this. This made my writing group a bit uncomfortable, after some very positive and encouraging sessions previous to this.
-                I don't even know what to do. Who am I even wiriting this for? I KNOW! Why don't I try making it into a game? People like games???
+                writing their book. "No one's ever going to like this, especially after how uncomfortable everyone got last time. I don't even know what to do. Who am I even wiriting this for? I KNOW! Why don't I try making it into a game? People like games???"
                 <br />
                 <br />
                 The studio currently has three members including them.
-                <br />
                 <br />
                 (ALF)IA is their debut.
             </div>

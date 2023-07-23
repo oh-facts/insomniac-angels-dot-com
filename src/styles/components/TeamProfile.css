@@ -1,5 +1,4 @@
-
-.profile-container{
+.profile-container {
     display: flex;
     justify-content: center;
     column-gap: 2%;
@@ -7,6 +6,19 @@
 
 }
 
-img.profile{
-   width: 40%;
+img.profile {
+    width: 40%;
+    
+}
+
+
+@media (max-width: 1300px) {
+    .profile-container {
+        flex-direction: column;
+    }
+
+
+    img.profile {
+        width: 80%;
+    }
 }

@@ -7,18 +7,27 @@ import "../styles/components/TeamProfile.css"
 const TeamProfile = () => {
   const Profile = ({ name, role, description, image }) => {
     return (
-      <div className="profile-container">
-        <img className="profile" src={image} alt={name} />
-        <p className="profile">
-        <b>Name: </b> {name}
+      <>
+
+        <div className="profile-container">
+          <img className="profile" src={image} alt={name} />
+          <p className="profile">
+            <b>Name: </b> {name}
+            <br />
+            <br />
+            <b>Role: </b> {role}
+            <br />
+            <br />
+            {description}
+
+          </p>
+
+        </div>
+        <br />
+        <hr />
         <br />
         <br />
-        <b>Role: </b> {role}
-        <br />
-        <br />
-        {description}
-        </p>
-      </div>
+      </>
     );
   };
 
@@ -41,7 +50,7 @@ const TeamProfile = () => {
       description: "Introduced Yufi and Anges to Minecraft. In his free time, he takes music lessons to help with the project since no one has any experience with it.",
       image: gabdu,
     },
-   
+
   ];
 
   return (
