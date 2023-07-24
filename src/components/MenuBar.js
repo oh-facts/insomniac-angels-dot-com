@@ -87,6 +87,7 @@ const MenuBar = () => {
       subMenuItems: [
         { title: 'About Us', id: 51, path: '/info/team' },
         { title: 'FAQ', id: 53, path: '/info/faq' },
+        { title: 'contact', id: 55, path: '/info/contact' },
         { title: 'YouTube \u2197', id: 52, path: 'https://www.youtube.com/channel/UCfYuZbToCun8OkYJ5K37Nig' },
         { title: 'Twitter \u2197', id: 54, path: 'https://twitter.com/ohfacts_' },
        
@@ -104,3 +105,8 @@ const MenuBar = () => {
 };
 
 export default MenuBar;
+
+/*
+Credits page.
+Socials page?
+*/

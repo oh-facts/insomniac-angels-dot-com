@@ -16,6 +16,7 @@ import Combat from "./pages/Combat";
 
 import Team from './pages/Team';
 import Community from './pages/Community';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route path="/info/faq" element={<Faq />} />
 
             <Route path="info/community" element={<Community />} />
+            <Route path="info/contact" element={<Contact />} />
 
 
 
