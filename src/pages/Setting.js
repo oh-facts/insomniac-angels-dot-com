@@ -1,6 +1,8 @@
 import earth1 from '../assets/earth1.jpg'
 import earth2 from '../assets/earth2.jpg'
 import '../styles/pages/Setting.css'
+import Boroughs from '../components/Boroughs.js'
+
 
 const Setting = () => {
     return (
@@ -30,17 +32,11 @@ const Setting = () => {
             <hr />
 
             <h2> The boroughs </h2>
+            <p>
+                The playable map is composed of five boroughs. Each borough has its own identity and flavor (?)
+            </p>
+            <Boroughs />
 
-            < div className='text-box'>
-                The city is divided into five boroughs.
-                <ol>
-                    <li>Moon</li>
-                    <li>Madilyn</li>
-                    <li>The Sox</li>
-                    <li>Duchess</li>
-                    <li>Tensi</li>
-                </ol>
-            </div>
 
         </div>
 
