@@ -1,4 +1,4 @@
-import '../styles/components/Form.css'
+import '../styles/components/Forms.css'
 
 export default function Forms() {
   return (
