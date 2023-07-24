@@ -75,8 +75,9 @@ const MenuBar = () => {
       title: 'About',
       id: 2,
       subMenuItems: [
-        { title: 'Setting', id: 21, path: '/about/setting' },
+        { title: 'Locations', id: 21, path: '/about/setting' },
         { title: 'Characters', id: 22, path: '/about/characters' },
+        { title: 'Combat', id: 23, path: '/about/combat' },
       ],
     },
     { title: 'Media', id: 3, path: '/media' },

@@ -9,8 +9,11 @@ import MenuBar from './components/MenuBar';
 import Media from './pages/Media';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import About from './components/About';
 import Characters from './pages/Characters';
+import Combat from "./pages/Combat";
+
 import Team from './pages/Team';
 import Community from './pages/Community';
 
@@ -33,6 +36,7 @@ function App() {
 
             <Route path="about/setting" element={<Setting />} />
             <Route path="about/characters" element={<Characters />} />
+            <Route path="about/combat" element={<Combat />} />
 
             <Route path="info/team" element={<Team />} />
             <Route path="media" element={<Media />} />
