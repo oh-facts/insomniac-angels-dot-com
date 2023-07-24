@@ -41,8 +41,9 @@ const Media = () => {
   return (
 
     <>
-      <h1> Under construction </h1>
-      <div className="media-grid">
+      <br />
+      <br />
+            <div className="media-grid">
 
         {images.map((image, index) => (
           <div className="media-item" key={index} onClick={() => openLightbox(image, index)}>

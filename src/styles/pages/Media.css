@@ -9,18 +9,42 @@
   }
   
   .media-item {
-    flex: 0 0 15%;
+    flex: 0 0 30%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .media-item img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
     cursor: pointer;
   }
   
+
+@media (max-width: 1024px) {
+   
+.media-grid {
+  display: flex;
+
+  padding:0%;
+}
+  .media-item {
+    display: flex;
+    flex: 0 0 90%;
+    justify-content: center;
+
+    margin: 5%;
+    align-items: center;
+  }
+  .media-item img {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+}
+
+@media (min-width:601px) and (max-width: 1024px) {}
+
   .lightbox-container {
     position: fixed;
     top: 0;
