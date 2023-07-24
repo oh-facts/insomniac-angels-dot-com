@@ -2,6 +2,7 @@
 import AngelFace from '../components/AngelFace';
 import About from '../components/About';
 import '../styles/pages/Home.css'
+import Forms from '../components/Forms';
 
 const Home = () => {
     return (
@@ -9,6 +10,7 @@ const Home = () => {
 
             <AngelFace />
             <About />
+            <Forms />
 
         </div>
     );
