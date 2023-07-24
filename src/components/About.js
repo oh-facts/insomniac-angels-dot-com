@@ -21,7 +21,7 @@ const About = () => {
         they have little intention of being ripped up.
         <br />
         <br />
-        (ALF)IA is a postmodern retro slasher with an emphasis on story, exploration and combat. You'll be responsible for the choices you make, and the people it affects.
+        (ALF)IA is a postmodern retro slasher with an emphasis on story, exploration and combat. 
 
       </div>
 
@@ -36,3 +36,5 @@ const About = () => {
 }
 
 export default About;
+
+/*You'll be responsible for the choices you make, and the people it affects.*/
