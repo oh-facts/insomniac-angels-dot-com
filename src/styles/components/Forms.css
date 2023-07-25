@@ -1,18 +1,94 @@
-.contactForm{
-    padding: 10px;
-    width: 90%;
-    max-width: 400px;
-    margin: 30px auto;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .contactForm input, button, textarea{
-    height: 50px;
-    padding-left: 5px;
-    font-size: 18px;
-  }
-  .contactForm textarea{
-    height: 100px;
-  }
+/* Forms.css */
+
+.contactForm {
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 600px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  margin-bottom: 15px;
+  padding: 0.3em;
+  border: 1px solid #ff9324;
+  color: #ff9324;
+  background-color: transparent;
+}
+
+.contactForm textarea {
+  height: 20em;
+}
+
+.contactForm button {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  font-size: 1rem;
+  padding: 10px;
+  background-color: transparent;
+  color: #ff9324;
+  border: 1px solid #ff9324;
+  cursor: pointer;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: black;
+  opacity: 30%;
+}
+
+
+.contactForm div.infoMessage {
+  font-size: 0.8em;padding-bottom: 1.8em;
+  color: #ff9324;
+}
+.checkbox-container {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.checkbox-container input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid #ff9324;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  
+.checkbox-container input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 1.5em;
+  height: 1.25em;
+  border: 2px solid #ff9324;
+  position: relative;
+}
+}
+
+
+.checkbox-container input[type='checkbox']:checked::before {
+  content: '';
+  position: absolute;
+  left: 0.5em;
+  top: 40%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 0.4em;
+  height: 0.8em;
+  border: solid #ff9324;
+  border-width: 0 0.15em 0.15em 0;
+}
+
+.checkbox-container div.infoMessage {
+  font-size: 1em;
+  margin-top: 1.2em;
+  margin-left: 1em;
+  color: #ff9324;
+}

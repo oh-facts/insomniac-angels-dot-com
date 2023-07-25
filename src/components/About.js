@@ -21,7 +21,7 @@ const About = () => {
         they have little intention of being ripped up.
         <br />
         <br />
-        (ALF)IA is a postmodern retro slasher with an emphasis on story, exploration and combat. 
+        Welcome to (ALF)IA, a postmodern retro slasher that emphasises on exploration and combat, with a great story to hold it all together 
 
       </div>
 
