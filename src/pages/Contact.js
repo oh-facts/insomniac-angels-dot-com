@@ -5,8 +5,9 @@ const Contact = () => {
     return (
         <div className="contact">
             <h1>contact</h1>
-            dm me maybe
 
+            <br />
+            The only official company email is ohfacts.says@gmail.com
 
 
             <Forms />
