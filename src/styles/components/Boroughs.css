@@ -1,0 +1,77 @@
+/* boroughs.css */
+
+/* Style for the container that holds the carousel */
+.borough-carousel {
+    max-width: 600px; /* Adjust the width as per your design */
+    margin: 0 auto;
+  }
+  
+  /* Style for each individual profile container in the carousel */
+  .profile-container {
+    padding: 20px;
+    background-color: #f0f0f0; /* Customize the background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the profile name */
+  .profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the profile description */
+  .profile-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Style for the carousel dots */
+  .slick-dots {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .slick-dots li button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #007bff; /* Customize the color of the active dot */
+  }
+  
+  /* Optional: Style for arrows (if you want to add navigation arrows to the carousel) */
+  .slick-prev,
+  .slick-next {
+    font-size: 20px;
+    color: #007bff; /* Customize the arrow color */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
