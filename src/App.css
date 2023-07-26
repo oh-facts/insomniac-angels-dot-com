@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Delius';
   src: url('./assets/Delius-Regular.ttf') format('truetype');
+  font-display: swap
 }
 
 * {
@@ -110,5 +111,12 @@ body {
 
 @media (min-width:601px) and (max-width: 1024px) {}
 
+
+*/
+
+/*
+Themes:
+orange: #ff9324;
+pink:  #a4005b;
 
 */

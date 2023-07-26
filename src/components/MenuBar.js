@@ -75,12 +75,21 @@ const MenuBar = () => {
       title: 'About',
       id: 2,
       subMenuItems: [
-        { title: 'Locations', id: 21, path: '/about/setting' },
+        { title: 'World', id: 21, path: '/about/setting' },
         { title: 'Characters', id: 22, path: '/about/characters' },
-        { title: 'Combat', id: 23, path: '/about/combat' },
+        { title: 'Combat System', id: 23, path: '/about/combat' },
       ],
     },
-    { title: 'Media', id: 3, path: '/media' },
+    {
+      title: 'Media',
+      id: 3,
+      subMenuItems: [
+        { title: 'Artwork', id: 31, path: '/media' },
+        { title: 'Screenshots', id: 32, path: '/media/screenshots' },
+        { title: 'Trailers', id: 33, path: '/media/trailers' },
+      ],
+
+    },
     {
       title: 'Info',
       id: 5,
@@ -90,7 +99,7 @@ const MenuBar = () => {
         { title: 'contact', id: 55, path: '/info/contact' },
         { title: 'YouTube \u2197', id: 52, path: 'https://www.youtube.com/channel/UCfYuZbToCun8OkYJ5K37Nig' },
         { title: 'Twitter \u2197', id: 54, path: 'https://twitter.com/ohfacts_' },
-       
+
       ],
     },
   ];
