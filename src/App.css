@@ -34,7 +34,7 @@
 
 
 @media (max-width: 600px) {
-  .viewport{
+  .viewport {
     padding-left: 4%;
     padding-right: 0.5%;
   }
@@ -60,24 +60,31 @@ body {
   justify-content: center;
 }
 
+.top-line,
+.bottom-line,
+.left-line,
+.right-line {
+  position: fixed;
+  background-color: #ff9324;
+}
 
 .top-line,
 .bottom-line {
-  position: fixed;
+
   left: 0;
   width: 100%;
   height: 0.2em;
-  background-color: #ff9324;
+
 
 }
 
 .left-line,
 .right-line {
-  position: fixed;
+
   top: 0;
   width: 0.2em;
   height: 100%;
-  background-color: #ff9324;
+
 
 }
 
