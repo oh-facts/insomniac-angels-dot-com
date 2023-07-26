@@ -46,10 +46,10 @@
 
 
 body {
-  background-color: #a4005b;
+  background-color:  #470027;
   font-family: 'Delius';
   font-size: 1.25rem;
-  color: #ff9324;
+  color: #ffbf80;
   overflow: hidden;
 }
 
@@ -65,7 +65,7 @@ body {
 .left-line,
 .right-line {
   position: fixed;
-  background-color: #ff9324;
+  background-color: #ffbf80;
 }
 
 .top-line,
@@ -105,7 +105,7 @@ body {
 }
 
 .Faq {
-  color: #ff9324;
+  color: #ffbf80;
   justify-content: center;
   display: flex;
 }
@@ -123,7 +123,12 @@ body {
 
 /*
 Themes:
-orange: #ff9324;
-pink:  #a4005b;
+orange: #ffbf80;
+pink:  #470027;
 
+#ffbf80: #ffbf80
+dark-pink: #470027
+
+ffbf80
+470027
 */

@@ -17,7 +17,7 @@
 }
 
 .text-box {
-    color: #ff9324;
+    color: #ffbf80;
     padding-bottom: 2%;
     line-height: 2;
 }
@@ -35,6 +35,6 @@
 hr {
     border: none;
     width: 50%;
-    background-color: #ff9324;
+    background-color: #ffbf80;
     height: 0.1em;
 }
