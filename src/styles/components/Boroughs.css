@@ -1,0 +1,54 @@
+.boroughs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 40em;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+  }
+  
+  .carousel-content {
+    position: absolute;
+    width: 100%;
+    bottom: -15%;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Add smooth transition for animation */
+  }
+  
+  .borough {
+    line-height: 2;
+    width: 100%;
+    padding: 2%;
+  }
+  
+  .carousel-button-next,
+  .carousel-button-prev {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+    background-position: center;
+    padding: 2.5em 5em;
+  }
+  
+  .carousel-button-next {
+    background-image: url("../../assets/arrow1.png");
+    
+  }
+  
+  .carousel-button-prev {
+    background-image: url("../../assets/arrow2.png");
+  }
+  
+  .carousel-button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
