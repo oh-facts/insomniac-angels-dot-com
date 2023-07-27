@@ -1,16 +1,38 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../styles/components/Boroughs.css';
+import city1 from '../assets/boroughs/city1.png'
 
 const Boroughs = () => {
   const [currentProfile, setCurrentProfile] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
   const carouselRef = useRef(null);
   const slideWidth = useRef(0);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   useEffect(() => {
     slideWidth.current = carouselRef.current.offsetWidth;
     setIsLoaded(true); // Set isLoaded to true after carouselRef is ready
   }, []);
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    touchEndX.current = e.changedTouches[0].clientX;
+    handleSwipe();
+  };
+
+  const handleSwipe = () => {
+    const swipeDistance = touchEndX.current - touchStartX.current;
+    const sensitivity = 50; // Adjust the sensitivity of the swipe here
+    if (swipeDistance > sensitivity) {
+      prevProfile();
+    } else if (swipeDistance < -sensitivity) {
+      nextProfile();
+    }
+  };
 
   const nextProfile = () => {
     setCurrentProfile((prevIndex) => (prevIndex + 1) % profiles.length);
@@ -20,9 +42,11 @@ const Boroughs = () => {
     setCurrentProfile((prevIndex) => (prevIndex - 1 + profiles.length) % profiles.length);
   };
 
-  const Profile = ({ name, description }) => {
+  const Profile = ({image, name, description }) => {
     return (
       <div className="borough">
+        <img src={image} alt='city' / >
+          <br />
         <b>{name}</b>
         <br />
         {description}
@@ -30,32 +54,38 @@ const Boroughs = () => {
     );
   };
 
+
   const profiles = [
 
     {
 
-      name: "Anne-Hatta",
-      description: "The flashy  and expensive Borough of dreams. No crisis ever could make anyone want to leave this place. Mors tested this hypothesis by killing hundreds of thousands and levelling most neighborhoods. It looks like a cement pavement that just set in, with debris of all sorts strewn around. Only 5% of this place remains recognizable. Our protagonist lives here.",
+      name: "Enhatta",
+      image: city1,
+      description: "The flashy  and expensive Borough of dreams. No crisis ever could make anyone want to leave this place. Mors tested this hypothesis using independent research. Only 5% of this place remains recognizable. Our protagonist lives here.",
       /* Every ambitious young adult wishes they could move here because it is objectively the only way they could ever pursue their dreams.*/
     },
     {
       name: "Madilyn",
-      description: "Gained popularity after Moon was deemed \"a bad idea\" by The BiWeekly. Has the most amount of parks and gardens, and since Mors has been avoiding forests, this place is currently deemed, \"Not a bad idea\" by the BiWeekly.",
+      image: city1,
+      description: "Gained popularity after Moon was deemed \"a bad idea\" by The BiWeekly. Too much music and an excess of hipsters, Mors has been avoiding this area. This place is currently deemed, \"Not a bad idea\" by the BiWeekly.",
 
     },
     {
-      name: "The Dawns",
-      description: "This borough has transformed heavily over the years. Once, plagued by high crime rates and ineffective policies, has quickly turned around because of the President's efforts (Presidents's efforts). This large change, in a rather small amount of time is visible by the sharp shifts in suburban and rural areas. While this borough may have had a troubled past, its present and future are just as bad, since Mors arrived, and made it his home. He rests here on sundays. Oyasumi Mors kun.",
+      name: "Fawns",
+      image: city1,
+      description: "Once riddled with crime, now sees a record breaking zero percent crime rates. Now its just a culturally rich borough full of parks. Mors loves spending his sundays here.",
 
     },
     {
       name: "Duchess",
-      description: "The player finds himself in a culturally different area every step he takes. Its like a hundred different boroughs, squeezed next to each other, each just as unique, as immersive.",
+      image: city1,
+      description: "Easy to forget why you came here because of the general feel of unfamiliarity that echoes here. Squeezed next to each other are hundreds (source: BiWeekly) of different cultures each one block large, intersecting through everything and itself.",
 
     },
     {
       name: "Tensi",
-      description: "Even Mors said no. This place will be blocked off because we don't want players to accidentally wander here.",
+      image: city1,
+      description: "Even Mors said no. This place will be blocked off because we don't want players to accidentally wander here. Please don't accidentally wander here.",
 
     },
 
@@ -65,17 +95,22 @@ const Boroughs = () => {
 
   return (
     <div className="boroughs">
-      <div className="carousel-container" ref={carouselRef}>
+      <div
+        className="carousel-container"
+        ref={carouselRef}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         <div className="carousel-content" style={carouselStyle}>
           {isLoaded &&
             profiles.map((profile, index) => (
-              <Profile key={index} name={profile.name} description={profile.description} />
+              <Profile key={index} image={profile.image} name={profile.name} description={profile.description} />
             ))}
         </div>
       </div>
       <div className="carousel-button-container">
         <button className="carousel-button-prev" onClick={prevProfile} />
-        <button className="carousel-button-next" onClick={nextProfile} />      
+        <button className="carousel-button-next" onClick={nextProfile} />
       </div>
     </div>
   );
