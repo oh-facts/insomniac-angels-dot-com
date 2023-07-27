@@ -25,7 +25,7 @@ const Boroughs = () => {
      
       {
         
-        name: "Moon",
+        name: "Anne-Hatta",
         description: "The flashy  and expensive Borough of dreams. No crisis ever could make anyone want to leave this place. Mors tested this hypothesis by killing hundreds of thousands and levelling most neighborhoods. It looks like a cement pavement that just set in, with debris of all sorts strewn around. Only 5% of this place remains recognizable. Our protagonist lives here.",
           /* Every ambitious young adult wishes they could move here because it is objectively the only way they could ever pursue their dreams.*/
       },
