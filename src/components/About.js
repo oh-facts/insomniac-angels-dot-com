@@ -10,18 +10,13 @@ const About = () => {
 
       <img className="scene1" src={scene1} alt='scene1'/>
 
-      <div className='text-box'>
+      <div className='text-box' style={{textAlign:"center"}}>
 
         What are 10 things you'd like to do before you die, you think to yourself as you hear about Mors Code on the EAS
         level a few districts, kill a million something people and rip the president into two and refer to them as
-        the Presidents.
+        the Presidents. Things don't look very nice, but oh well, atleast now you have 10 other things to distract yourself.
         <br />
-        <br />
-        Its been a few hours since Mors Code started, and things haven't been looking very nice. Even the angels have stopped showing up since
-        they have little intention of being ripped up.
-        <br />
-        <br />
-        Welcome to (ALF)IA, a postmodern retro slasher that emphasises on exploration and combat, with a great story to hold it all together 
+        (ALF)IA is a postmodern slasher that emphasises on exploration and combat, with a great story  to hold it all together 
 
       </div>
 

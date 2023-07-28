@@ -10,30 +10,27 @@ const Setting = () => {
         <div className='setting'>
 
 
-            <h2> A Godless World </h2>
+            <h2> A vacant farewell</h2>
+            <p> <i>I must go, but don't want to make a scene </i></p>
             <div className='earth-container'>
                 <img className='earth2' src={earth2} alt='banner' />
                 <img className='earth1' src={earth1} alt='banner' />
             </div>
 
 
-            <div className='text-box'>
+            <div className='text-box' style={{textAlign:"center"}}>
                 <br />
-                Welcome to New Yinneva City, where the people are tired, the devils are in excess, and the Gods are quite dead. Thankfully,
-                some angels still exist and make genuine attempts at preserving the human race. That got dark. I shall go again.
+                Welcome to New Yinneva City, a place so wonderful, the planet was named after it. Or was it the other way round?
                 <br />
-                <br />
-                Welcome to New Yinneva City, a place so wonderful, the planet was named after it. Or maybe it was the other way round? Remember when it was called
-                earth? Oh well, God bless Yinneva.
-
-
+                Now, the angels are disappearing, God is dead, and demons are spawning everywhere you look. Welcome! Hope you enjoy whatever is left, however long it lasts.
+                God bless Yinneva.
             </div>
 
             <hr />
 
-            <h2> The boroughs </h2>
+            <h2> A few good settlements</h2>
             <p>
-                The playable map is composed of five boroughs. Each borough has its own identity and flavor (?)
+                Explore what remains of a quickly dying world, before it all goes away.
             </p>
             <Boroughs />
 
@@ -58,8 +55,5 @@ export default Setting;
                 Moon
                 Dukes
 
-                the flashy and expensive city of dreams. Every ambitious young adult wishes they
-                lived here because it is objectively the only way they can ever find their dreams come true. No crisis ever could
-                make anyone want to leave this place.
 
 */

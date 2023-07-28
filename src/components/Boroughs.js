@@ -12,7 +12,7 @@ const Boroughs = () => {
 
   useEffect(() => {
     slideWidth.current = carouselRef.current.offsetWidth;
-    setIsLoaded(true); // Set isLoaded to true after carouselRef is ready
+    setIsLoaded(true);
   }, []);
 
   const handleTouchStart = (e) => {
@@ -26,7 +26,7 @@ const Boroughs = () => {
 
   const handleSwipe = () => {
     const swipeDistance = touchEndX.current - touchStartX.current;
-    const sensitivity = 50; // Adjust the sensitivity of the swipe here
+    const sensitivity = 50;
     if (swipeDistance > sensitivity) {
       prevProfile();
     } else if (swipeDistance < -sensitivity) {
@@ -42,11 +42,11 @@ const Boroughs = () => {
     setCurrentProfile((prevIndex) => (prevIndex - 1 + profiles.length) % profiles.length);
   };
 
-  const Profile = ({image, name, description }) => {
+  const Profile = ({ image, name, description }) => {
     return (
       <div className="borough">
-        <img src={image} alt='city' / >
-          <br />
+        <img src={image} alt='city' />
+        <br />
         <b>{name}</b>
         <br />
         {description}
@@ -59,37 +59,27 @@ const Boroughs = () => {
 
     {
 
-      name: "Enhatta",
+      name: "Anne-hatta",
       image: city1,
-      description: "The flashy  and expensive Borough of dreams. No crisis ever could make anyone want to leave this place. Mors tested this hypothesis using independent research. Only 5% of this place remains recognizable. Our protagonist lives here.",
+      description: "The flashy and expensive Borough of dreams. No crisis ever could make anyone want to leave this place. Mors tested this hypothesis using independent research. Only 5% of this place remains recognizable. This place died so hard, the literal city went to heaven.",
+      /*Midnight Enhatta, Anne-hatta, moon */
       /* Every ambitious young adult wishes they could move here because it is objectively the only way they could ever pursue their dreams.*/
     },
     {
-      name: "Madilyn",
+      name: "North Madilyn",
       image: city1,
       description: "Gained popularity after Moon was deemed \"a bad idea\" by The BiWeekly. Too much music and an excess of hipsters, Mors has been avoiding this area. This place is currently deemed, \"Not a bad idea\" by the BiWeekly.",
 
     },
     {
-      name: "Fawns",
+      name: "Caroline",
       image: city1,
       description: "Once riddled with crime, now sees a record breaking zero percent crime rates. Now its just a culturally rich borough full of parks. Mors loves spending his sundays here.",
 
     },
-    {
-      name: "Duchess",
-      image: city1,
-      description: "Easy to forget why you came here because of the general feel of unfamiliarity that echoes here. Squeezed next to each other are hundreds (source: BiWeekly) of different cultures each one block large, intersecting through everything and itself.",
+    
 
-    },
-    {
-      name: "Tensi",
-      image: city1,
-      description: "Even Mors said no. This place will be blocked off because we don't want players to accidentally wander here. Please don't accidentally wander here.",
-
-    },
-
-  ]; 
+  ];
   const slideOffset = -currentProfile * slideWidth.current;
   const carouselStyle = isLoaded ? { transform: `translateX(${slideOffset}px)`, width: `${slideWidth.current * profiles.length}px` } : {};
 
@@ -117,3 +107,26 @@ const Boroughs = () => {
 };
 
 export default Boroughs;
+
+
+/* 
+  Rejected contendors (mainly due to scope)
+  {
+    name: "Fawns",
+    image: city1,
+    description: "Once riddled with crime, now sees a record breaking zero percent crime rates. Now its just a culturally rich borough full of parks. Mors loves spending his sundays here.",
+
+  },
+  {
+    name: "Duchess",
+    image: city1,
+    description: "Easy to forget why you came here because of the general feel of unfamiliarity that echoes here. Squeezed next to each other are hundreds (source: BiWeekly) of different cultures each one block large, intersecting through everything and itself.",
+
+  },
+  {
+    name: "Tensi",
+    image: city1,
+    description: "Even Mors said no. This place will be blocked off because we don't want players to accidentally wander here. Please don't accidentally wander here.",
+
+  },
+*/
