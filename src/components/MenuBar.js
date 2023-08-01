@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import '../styles/components/MenuBar.css'
+import logo from "../assets/menubar/logo.png"
+
 
 
 const SubMenuItem = ({ item, onCloseSubMenu }) => {
@@ -105,11 +107,16 @@ const MenuBar = () => {
   ];
 
   return (
-    <div className="menu-bar">
-      {tabs.map((tab) => (
-        <MenuItem key={tab.id} title={tab.title} path={tab.path} subMenuItems={tab.subMenuItems || []} />
-      ))}
+    <div className='header'>
+      <img className='logo' src={logo} />
+      <div className="menu-bar">
+
+        {tabs.map((tab) => (
+          <MenuItem key={tab.id} title={tab.title} path={tab.path} subMenuItems={tab.subMenuItems || []} />
+        ))}
+      </div>
     </div>
+
   );
 };
 
