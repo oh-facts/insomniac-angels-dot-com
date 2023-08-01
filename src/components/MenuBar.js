@@ -4,7 +4,21 @@ import { Link, useLocation } from 'react-router-dom';
 import '../styles/components/MenuBar.css'
 import logo from "../assets/menubar/logo.png"
 
+const HamburgerMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className={`hamburger-menu${isOpen ? ' open' : ''}`} onClick={toggleMenu}>
+      <div className="bar"></div>
+      <div className="bar"></div>
+      <div className="bar"></div>
+    </div>
+  );
+};
 
 const SubMenuItem = ({ item, onCloseSubMenu }) => {
   const handleClick = () => {
@@ -109,6 +123,7 @@ const MenuBar = () => {
   return (
     <div className='header'>
       <img className='logo' src={logo} />
+      <HamburgerMenu />
       <div className="menu-bar">
 
         {tabs.map((tab) => (
