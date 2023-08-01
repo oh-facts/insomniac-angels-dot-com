@@ -14,9 +14,10 @@
 
   flex-direction: column;
   overflow-y: scroll;
-  height: 88vh;
+  height: 97vh;
   padding-left: 15%;
   padding-right: 15%;
+  margin-top: 0.5%;
   align-content: center
 }
 
