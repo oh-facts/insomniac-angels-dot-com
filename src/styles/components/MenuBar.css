@@ -137,5 +137,5 @@ padding-right: 1%;
 }
 
 .header-hidden {
-  top: 60px;
+  top: -60px;
 }
