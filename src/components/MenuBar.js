@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import '../styles/components/MenuBar.css';
-import logo from "../assets/menubar/logo.png";
+import '../styles/components/MenuBar.css'
+import logo from "../assets/menubar/logo.png"
+
+
 
 const SubMenuItem = ({ item, onCloseSubMenu }) => {
   const handleClick = () => {
@@ -56,7 +58,7 @@ const MenuItem = ({ title, path, subMenuItems }) => {
 
   return (
     <div
-      className={`menu-item${isSubMenuOpen ? ' menu-item-open' : ''}`}
+      className={`menu-item${isSubMenuOpen ? '-open' : ''}`}
       onMouseEnter={toggleSubMenu}
       onMouseLeave={toggleSubMenu}
     >
@@ -104,45 +106,23 @@ const MenuBar = () => {
     },
   ];
 
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
   return (
-    <div className="header">
-      <a href="https://www.example.com">
-        <img className="logo" src={logo} alt="Logo" />
-      </a>
+    <div className='header'>
+      <img className='logo' src={logo} />
+      <div className="menu-bar">
 
-      {/* Mobile Menu Overlay */}
-      <div className={`menu-overlay${isMobileMenuOpen ? ' show-mobile-menu' : ''}`}>
-        <div className="menu-items-mobile">
-          {tabs.map((tab) => (
-            <MenuItem key={tab.id} title={tab.title} path={tab.path} subMenuItems={tab.subMenuItems || []} />
-          ))}
-        </div>
-      </div>
-
-      {/* Hamburger Menu Button */}
-      <div className={`hamburger-menu${isMobileMenuOpen ? ' open' : ''}`} onClick={toggleMobileMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-      </div>
-
-      {/* Horizontal Menu for Desktop Mode */}
-      <div className={`menu-bar${isMobileMenuOpen ? ' show-mobile-menu' : ''}`}>
-        <div className="menu-items">
-          {tabs.map((tab) => (
-            <MenuItem key={tab.id} title={tab.title} path={tab.path} subMenuItems={tab.subMenuItems || []} />
-          ))}
-        </div>
+        {tabs.map((tab) => (
+          <MenuItem key={tab.id} title={tab.title} path={tab.path} subMenuItems={tab.subMenuItems || []} />
+        ))}
       </div>
     </div>
+
   );
 };
 
-
 export default MenuBar;
+
+/*
+Credits page.
+Socials page?
+*/
