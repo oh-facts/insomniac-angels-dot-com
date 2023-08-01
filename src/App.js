@@ -27,8 +27,9 @@ function App() {
 
       <BrowserRouter>
 
-      <MenuBar />
+    
         <div className='viewport'>
+        <MenuBar />
           <Routes>
 
             <Route index element={<Home />} />
