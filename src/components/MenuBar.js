@@ -1,24 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import '../styles/components/MenuBar.css'
-import logo from "../assets/menubar/logo.png"
+import '../styles/components/MenuBar.css';
+import logo from '../assets/menubar/logo.png';
 
-const HamburgerMenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  return (
-    <div className={`hamburger-menu${isOpen ? ' open' : ''}`} onClick={toggleMenu}>
-      <div className="bar"></div>
-      <div className="bar"></div>
-      <div className="bar"></div>
-    </div>
-  );
-};
+const HamburgerMenu = ({ isOpen, toggleMenu }) => (
+  <div className={`hamburger-menu${isOpen ? ' open' : ''}`} onClick={toggleMenu}>
+    <div className="bar"></div>
+    <div className="bar"></div>
+    <div className="bar"></div>
+  </div>
+);
 
 const SubMenuItem = ({ item, onCloseSubMenu }) => {
   const handleClick = () => {
@@ -71,11 +63,7 @@ const MenuItem = ({ title, path, subMenuItems }) => {
   };
 
   return (
-    <div
-      className={`menu-item${isSubMenuOpen ? '-open' : ''}`}
-      onMouseEnter={toggleSubMenu}
-      onMouseLeave={toggleSubMenu}
-    >
+    <div className={`menu-item${isSubMenuOpen ? '-open hamburger' : ''}`} onMouseEnter={toggleSubMenu} onMouseLeave={toggleSubMenu}>
       <Link to={path} className="menu-link">
         {title}
       </Link>
@@ -85,6 +73,12 @@ const MenuItem = ({ title, path, subMenuItems }) => {
 };
 
 const MenuBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   const tabs = [
     { title: 'Home', id: 1, path: '' },
     {
@@ -104,7 +98,6 @@ const MenuBar = () => {
         { title: 'Screenshots', id: 32, path: '/media/screenshots' },
         { title: 'Trailers', id: 33, path: '/media/trailers' },
       ],
-
     },
     {
       title: 'Info',
@@ -115,29 +108,21 @@ const MenuBar = () => {
         { title: 'contact', id: 55, path: '/info/contact' },
         { title: 'YouTube \u2197', id: 52, path: 'https://www.youtube.com/channel/UCfYuZbToCun8OkYJ5K37Nig' },
         { title: 'Twitter \u2197', id: 54, path: 'https://twitter.com/ohfacts_' },
-
       ],
     },
   ];
 
   return (
-    <div className='header'>
-      <img className='logo' src={logo} />
-      <HamburgerMenu />
-      <div className="menu-bar">
-
+    <div className="header">
+      <img className="logo" src={logo} />
+      <HamburgerMenu isOpen={isOpen} toggleMenu={toggleMenu} />
+      <div className={`menu-bar${isOpen ? ' hamburger' : ''}`}>
         {tabs.map((tab) => (
           <MenuItem key={tab.id} title={tab.title} path={tab.path} subMenuItems={tab.subMenuItems || []} />
         ))}
       </div>
     </div>
-
   );
 };
 
 export default MenuBar;
-
-/*
-Credits page.
-Socials page?
-*/
