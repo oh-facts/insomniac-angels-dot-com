@@ -73,17 +73,15 @@ const MenuBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
+      const currentScrollPos = window.pageYOffset;
       const visible = prevScrollPos > currentScrollPos;
       setVisible(visible);
       setPrevScrollPos(currentScrollPos);
-      print("fe");
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      
     };
   }, [prevScrollPos]);
 
