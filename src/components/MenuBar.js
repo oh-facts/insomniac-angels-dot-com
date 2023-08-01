@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import '../styles/components/MenuBar.css';
-import logo from "../assets/menubar/logo.png";
+
+import '../styles/components/MenuBar.css'
+import logo from "../assets/menubar/logo.png"
+
+
 
 const SubMenuItem = ({ item, onCloseSubMenu }) => {
   const handleClick = () => {
@@ -68,23 +71,6 @@ const MenuItem = ({ title, path, subMenuItems }) => {
 };
 
 const MenuBar = () => {
-  const [visible, setVisible] = useState(true);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      const visible = prevScrollPos > currentScrollPos;
-      setVisible(visible);
-      setPrevScrollPos(currentScrollPos);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [prevScrollPos]);
-
   const tabs = [
     { title: 'Home', id: 1, path: '' },
     {
@@ -119,16 +105,24 @@ const MenuBar = () => {
       ],
     },
   ];
+
   return (
-    <div className={`header${visible ? "" : "-hidden"}`}>
+    <div className='header'>
       <img className='logo' src={logo} />
       <div className="menu-bar">
+
         {tabs.map((tab) => (
           <MenuItem key={tab.id} title={tab.title} path={tab.path} subMenuItems={tab.subMenuItems || []} />
         ))}
       </div>
     </div>
+
   );
 };
 
 export default MenuBar;
+
+/*
+Credits page.
+Socials page?
+*/
