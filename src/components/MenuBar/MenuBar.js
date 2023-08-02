@@ -10,11 +10,11 @@ const MenuBar = () => {
   const menuRef = useRef(null);
 
   const tabs = [
-    { title: 'Home', id: 1, path: '' },
     {
       title: 'About',
       id: 2,
       subMenuItems: [
+        { title: 'Overview', id: 24, path: '/about/overview' },
         { title: 'World', id: 21, path: '/about/setting' },
         { title: 'Characters', id: 22, path: '/about/characters' },
         { title: 'Combat System', id: 23, path: '/about/combat' },
@@ -37,8 +37,15 @@ const MenuBar = () => {
         { title: 'About Us', id: 51, path: '/info/team' },
         { title: 'FAQ', id: 53, path: '/info/faq' },
         { title: 'contact', id: 55, path: '/info/contact' },
-        { title: 'YouTube \u2197', id: 52, path: 'https://www.youtube.com/channel/UCfYuZbToCun8OkYJ5K37Nig' },
-        { title: 'Twitter \u2197', id: 54, path: 'https://twitter.com/ohfacts_' },
+
+      ],
+    },
+    {
+      title: 'Socials',
+      id: 6,
+      subMenuItems: [
+        { title: 'YouTube \u2197', id: 61, path: 'https://www.youtube.com/channel/UCfYuZbToCun8OkYJ5K37Nig' },
+        { title: 'Twitter \u2197', id: 62, path: 'https://twitter.com/ohfacts_' },
 
       ],
     },
@@ -73,8 +80,8 @@ const MenuBar = () => {
   };
 
   return (
-    <div className="header">
-      <a href='' >
+    <div className="header">  
+      <a href='/' >
       <img className="logo" src={logo} />
       </a>
       
