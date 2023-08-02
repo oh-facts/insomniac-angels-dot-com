@@ -5,7 +5,7 @@ import './styles/Common.css'
 import Home from './pages/Home';
 import Setting from './pages/Setting';
 import Faq from './pages/Faq';
-import MenuBar from './components/MenuBar';
+import MenuBar from './components/MenuBar/MenuBar';
 import Media from './pages/Media';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
