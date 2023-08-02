@@ -74,7 +74,10 @@ const MenuBar = () => {
 
   return (
     <div className="header">
+      <a href='' >
       <img className="logo" src={logo} />
+      </a>
+      
       <div className='menu-bar' ref={menuRef}>
       {isSmallScreen ? (
         <div className="menu-bar-collapse">
