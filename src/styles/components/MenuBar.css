@@ -2,21 +2,18 @@
   padding-top: 0.5%;
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+ 
 }
 
-
-.logo {
-  padding-left: 1%
-}
-
+ 
 .menu-bar-desktop {
   display: flex;
-
+  
 
   z-index: 100;
-  padding-left: 2em;
+
 
 }
 
