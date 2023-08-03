@@ -68,8 +68,8 @@
   text-decoration: none;
   color: #ffbf80;
   transition: transform 0.2s ease;
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(0.1rem);
+  background-color: rgba(0, 0, 0, 0.199);
+  backdrop-filter: blur(0.1em);
   white-space: nowrap;
 }
 
