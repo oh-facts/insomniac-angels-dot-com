@@ -16,7 +16,7 @@ const About = () => {
         level a few districts, kill a million something people and rip the president into two and refer to them as
         the Presidents. Things don't look very nice, but oh well, atleast now you have 10 other things to distract yourself.
         <br />
-        (ALF)IA is a postmodern slasher that emphasises on exploration and combat, with a great story  to hold it all together 
+        (ALF)IA is a postmodern isometric crpg that emphasises on exploration and combat, with a great story  to hold it all together 
 
       </div>
 
