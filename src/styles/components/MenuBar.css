@@ -2,7 +2,7 @@
   padding-top: 0.5%;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -13,9 +13,10 @@
 
 .menu-bar-desktop {
   display: flex;
-  justify-content: center;
-  padding-right: 1%;
+
+
   z-index: 100;
+  padding-left: 2em;
 
 }
 
@@ -96,14 +97,14 @@
     transition: transform 0.2s, opacity 0.2s;
   }
   
-  /*
+
   .menu-bar{
    
-    right:5%;
-    top:5%;
+    justify-content: center;
+    padding-left: 2em;
 
   }
-*/
+
   .hamburger-menu.open{
     background-color: #470027;
     padding: 5%;
