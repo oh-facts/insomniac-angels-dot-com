@@ -18,13 +18,16 @@ const TeamProfile = () => {
             <b>Role: </b> {role}
             <br />
             <br />
-            {description}
+            <div className="text-box">
+              {description}
+            </div>
+
 
           </p>
 
         </div>
         <br />
-        <hr />
+        
         <br />
         <br />
       </>
@@ -33,21 +36,21 @@ const TeamProfile = () => {
 
   const profiles = [
     {
-      name: "Cosmic Bunny / Yufi",
+      name: "Cosmic Bunny",
       role: "Designer, Writer",
-      description: "Founded the studio with two other friends from their uni. Has more friends but they are either busy with (middle) school or are imaginary. When they're not working, they're rewriting the story over and over again. ",
+      description: "Co-founded the studio with two other friends from his uni. Has more friends but half of the time they are busy and 100% of the time, they are imaginary. He intends to break into film-making as a director. He doesn't understand why he wrote this bio in 3rd person, since he did, everyone else will have to too ",
       image: molly2,
     },
     {
-      name: "Cosmic Donkey / Agnes",
-      role: "Artist, Animator",
-      description: "Likes listening to music/videos 24 x 7 in the background, even while doing mundane tasks. Needs constant stimulation or *will* lose interest.",
+      name: "Cosmic Donkey",
+      role: "Illustrator, Animator",
+      description: " Likes listening to music/videos 24 x 7 in the background, even while doing mundane tasks. Needs constant stimulation or *will* lose interest. When she's not working, she's sleeping. She hopes to make enough money to never have to care about anything ever.",
       image: yufi,
     },
     {
-      name: "Cosmic Friend / Gabdu",
-      role: "Programmer, Composer",
-      description: "Introduced Yufi and Anges to Minecraft. In his free time, he takes music lessons to help with the project since no one has any experience with it.",
+      name: "Cosmic Friend",
+      role: "Programmer, Artist",
+      description: "Wants to be a \"thousandaire atleast \" so he can fund some of his other projects, and once (AL)FIA reaches critical acclaim and he becomes rich, he'll go up to every spineless VC that called him \"a fake and capable of only amusing toddlers\" and run circles around them in his bugatti.",
       image: gabdu,
     },
 
