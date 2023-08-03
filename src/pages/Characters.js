@@ -1,7 +1,9 @@
+/*
 import fox from "../assets/characters/fox.png"
 import mors from "../assets/characters/mors.png"
 import player from "../assets/characters/player.png"
 import yeka from "../assets/characters/yeka.png"
+*/
 
 const Characters = () => {
 
@@ -16,7 +18,7 @@ const Characters = () => {
                 </div>
             </div>
         </div>
-
+ 
     );
 
 }
