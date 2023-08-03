@@ -82,7 +82,7 @@ const MenuBar = () => {
   return (
     <div className="header">  
       <a href='/' >
-      <img className="logo" src={logo} />
+      <img className="logo" src={logo} alt='logo' />
       </a>
       
       <div className='menu-bar' ref={menuRef}>
