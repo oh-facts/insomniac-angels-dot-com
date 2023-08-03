@@ -11,12 +11,14 @@ import Media from './pages/Media';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import About from './components/About';
+/*
 import Characters from './pages/Characters';
 import Combat from "./pages/Combat";
-
+*/
 import Team from './pages/Team';
 import Community from './pages/Community';
 import Contact from './pages/Contact';
+import Error404 from './pages/Error404';
 
 
 function App() {
@@ -27,9 +29,9 @@ function App() {
 
       <BrowserRouter>
 
-    
+
         <div className='viewport'>
-        <MenuBar />
+          <MenuBar />
           <Routes>
 
             <Route index element={<Home />} />
@@ -37,9 +39,12 @@ function App() {
             <Route path="about" element={<About />} />
 
             <Route path="about/setting" element={<Setting />} />
-            <Route path="about/characters" element={<Characters />} />
+            
+            { /*
+              <Route path="about/characters" element={<Characters />} />
             <Route path="about/combat" element={<Combat />} />
-
+            */
+            }
             <Route path="info/team" element={<Team />} />
             <Route path="media" element={<Media />} />
 
@@ -48,11 +53,13 @@ function App() {
             <Route path="info/community" element={<Community />} />
             <Route path="info/contact" element={<Contact />} />
 
+            <Route path="*" element={<Error404 />} />
+
 
 
           </Routes>
         </div>
-      
+
       </BrowserRouter>
 
 
