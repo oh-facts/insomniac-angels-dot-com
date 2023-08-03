@@ -11,7 +11,7 @@ const NotFound = () => {
             <br />
             <br />
 
-            <img src={molly} style={{ width: "20rem"}} />
+            <img src={molly} style={{ width: "20rem"}} alt="molly" />
             
             <br />
             <p>This page doesn't exist. How did you come here. Why did you come here. And when will you leave.</p>
